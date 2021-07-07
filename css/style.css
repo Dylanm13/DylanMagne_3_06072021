@@ -1,0 +1,34 @@
+header {
+  border-bottom: 1px solid black;
+  width: 90rem;
+}
+header img {
+  width: 25rem;
+  margin: 3rem 35rem;
+}
+
+.localisation {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+}
+.localisation_icon {
+  margin-top: 3rem;
+}
+.localisation_text {
+  margin-left: 5rem;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("policeroboto/Roboto-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("policeroboto/Roboto-Bold.tff") format("turetype");
+}
+body {
+  font-family: "Roboto";
+}
+
+/*# sourceMappingURL=style.css.map */

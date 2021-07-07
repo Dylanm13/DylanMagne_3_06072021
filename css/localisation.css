@@ -1,0 +1,13 @@
+.localisation {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+}
+.localisation_icon {
+  margin-top: 3rem;
+}
+.localisation_text {
+  margin-left: 5rem;
+}
+
+/*# sourceMappingURL=localisation.css.map */
