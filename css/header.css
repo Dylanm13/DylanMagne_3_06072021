@@ -1,10 +1,7 @@
-header {
-  border-bottom: 1px solid black;
-  width: 90rem;
-}
 header img {
-  width: 25rem;
-  margin: 3rem 35rem;
+  width: 20rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=header.css.map */

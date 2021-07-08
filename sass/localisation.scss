@@ -1,11 +1,11 @@
 .localisation {
     display: flex;
-    font-size: 3rem;
-    justify-content: center;
+    font-size: 2rem;
+    margin-left: 2rem;
     &_icon {
-       margin-top: 3rem;
+       margin-top: 2rem;
     }
     &_text{
-        margin-left: 5rem;
+        margin-left: 2rem;
     }
 }

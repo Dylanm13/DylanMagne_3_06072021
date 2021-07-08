@@ -1,22 +1,76 @@
-header {
-  border-bottom: 1px solid black;
-  width: 90rem;
-}
 header img {
-  width: 25rem;
-  margin: 3rem 35rem;
+  width: 20rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 .localisation {
   display: flex;
-  font-size: 3rem;
-  justify-content: center;
+  font-size: 2rem;
+  margin-left: 2rem;
 }
 .localisation_icon {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .localisation_text {
-  margin-left: 5rem;
+  margin-left: 2rem;
+}
+
+.explore {
+  text-align: center;
+  background-color: #F2F2F2;
+  height: 20rem;
+  padding-top: 2rem;
+}
+.explore_text h1 {
+  font-size: 2.5rem;
+}
+.explore_text p {
+  font-size: 2rem;
+}
+.explore_button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border-radius: 40px;
+  border: none;
+  font-size: 2rem;
+  height: 5rem;
+  padding: 0px 35px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.function h2 {
+  margin-left: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.function ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 520px);
+  grid-gap: 5rem;
+  justify-content: center;
+}
+.function_buttons {
+  display: flex;
+  font-size: 2rem;
+  border: 1px solid #F2F2F2;
+  box-shadow: 2px 2px 5px grey;
+  background-color: #F2F2F2;
+  border-radius: 30px;
+  margin-left: 2rem;
+}
+.function_numbers {
+  border: 1px solid #9356DC;
+  border-radius: 40px;
+  color: white;
+  background-color: #9356DC;
+  text-align: center;
+  width: 40px;
+  margin-left: -1.5rem;
+}
+.function_icon {
+  padding: 2rem 3rem;
+  color: grey;
 }
 
 @font-face {

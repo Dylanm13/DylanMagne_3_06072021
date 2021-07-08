@@ -1,0 +1,24 @@
+.explore {
+  text-align: center;
+  background-color: #F2F2F2;
+  height: 20rem;
+  padding-top: 2rem;
+}
+.explore_text h1 {
+  font-size: 2.5rem;
+}
+.explore_text p {
+  font-size: 2rem;
+}
+.explore_button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border-radius: 40px;
+  border: none;
+  font-size: 2rem;
+  height: 5rem;
+  padding: 0px 35px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+/*# sourceMappingURL=explore.css.map */

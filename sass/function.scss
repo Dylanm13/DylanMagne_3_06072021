@@ -1,0 +1,38 @@
+$color-primary:#9356DC;
+$color-quadra:#F2F2F2;
+
+.function {
+    h2 {
+        margin-left: 2rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 520px);
+        grid-gap: 5rem;
+        justify-content: center;
+    }
+    &_buttons {
+        display: flex;
+        font-size: 2rem;
+        border: 1px solid $color-quadra;
+        box-shadow: 2px 2px 5px grey;
+        background-color: $color-quadra;
+        border-radius: 30px;
+        margin-left: 2rem;
+    }
+    &_numbers {
+        border: 1px solid $color-primary;
+        border-radius: 40px;
+        color: white;
+        background-color: $color-primary;
+        text-align: center;
+        width: 40px;
+        margin-left: -1.5rem;
+    }
+    &_icon {
+        padding: 2rem 3rem;
+        color: grey
+    }
+}
