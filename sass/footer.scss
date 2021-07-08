@@ -1,0 +1,26 @@
+footer {
+    background-color: grey;
+    color: white;
+    padding: 2rem 0rem;
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 320px);
+        grid-gap: 9rem;
+        margin-left: 7rem;
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .footer_icon {
+        p {
+            margin-left: 1rem;
+        }
+    }
+}

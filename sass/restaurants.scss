@@ -1,0 +1,62 @@
+$color-quadra:#F2F2F2;
+
+@mixin squares_text-top {
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+}
+
+@mixin squares_text-bot {
+    margin-left: 1rem;
+    margin-top: -1rem;
+    font-size: 1.2rem;
+}
+
+.restaurants {
+    background-color: $color-quadra;
+    height: 25rem;
+    padding-top: 2rem;
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    &_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px);
+        grid-gap: 11.5rem;
+        margin-left: 5rem;
+    }
+    &_squares {
+        width: 300px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px grey;
+        height: 200px;
+
+        &--images {
+            width: 300px;
+            height: 135px;
+            border-radius: 20px 20px 0px 0px;
+        }
+        &--flex {
+            display: flex
+        }
+        &--names {
+            @include squares_text-top;
+        }
+        &--places {
+            @include squares_text-bot;
+        }
+        &--heart {
+            margin-left: 15rem;
+            font-size: 1.5rem;
+            margin-top: -25px;
+        }
+    }
+    
+}

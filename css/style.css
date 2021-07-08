@@ -40,7 +40,6 @@ header img {
 }
 
 .function h2 {
-  margin-left: 2rem;
   font-size: 2rem;
   text-align: center;
 }
@@ -71,6 +70,82 @@ header img {
 .function_icon {
   padding: 2rem 3rem;
   color: grey;
+}
+
+.restaurants {
+  background-color: #F2F2F2;
+  height: 25rem;
+  padding-top: 2rem;
+}
+.restaurants h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.restaurants ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.restaurants_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 11.5rem;
+  margin-left: 5rem;
+}
+.restaurants_squares {
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px grey;
+  height: 200px;
+}
+.restaurants_squares--images {
+  width: 300px;
+  height: 135px;
+  border-radius: 20px 20px 0px 0px;
+}
+.restaurants_squares--flex {
+  display: flex;
+}
+.restaurants_squares--names {
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+}
+.restaurants_squares--places {
+  margin-left: 1rem;
+  margin-top: -1rem;
+  font-size: 1.2rem;
+}
+.restaurants_squares--heart {
+  margin-left: 15rem;
+  font-size: 1.5rem;
+  margin-top: -25px;
+}
+
+footer {
+  background-color: grey;
+  color: white;
+  padding: 2rem 0rem;
+}
+footer h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-gap: 9rem;
+  margin-left: 7rem;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+footer .footer_icon p {
+  margin-left: 1rem;
 }
 
 @font-face {
