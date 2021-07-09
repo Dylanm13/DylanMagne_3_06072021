@@ -2,9 +2,11 @@ $color-primary:#9356DC;
 $color-quadra:#F2F2F2;
 
 .function {
+    padding: 3rem 0rem;
     h2 {
         font-size: 2rem;
         text-align: center;
+        padding-bottom: 3rem;
     }
     ul {
         display: grid;
@@ -27,7 +29,7 @@ $color-quadra:#F2F2F2;
         color: white;
         background-color: $color-primary;
         text-align: center;
-        width: 40px;
+        width: 37px;
         margin-left: -1.5rem;
     }
     &_icon {

@@ -1,6 +1,10 @@
+.function {
+  padding: 3rem 0rem;
+}
 .function h2 {
   font-size: 2rem;
   text-align: center;
+  padding-bottom: 3rem;
 }
 .function ul {
   display: grid;
@@ -23,7 +27,7 @@
   color: white;
   background-color: #9356DC;
   text-align: center;
-  width: 40px;
+  width: 37px;
   margin-left: -1.5rem;
 }
 .function_icon {

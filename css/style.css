@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Light.ttf") format("truetype");
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 header img {
   width: 20rem;
   margin-left: 2rem;
@@ -39,9 +51,13 @@ header img {
   box-shadow: 2px 2px 5px grey;
 }
 
+.function {
+  padding: 3rem 0rem;
+}
 .function h2 {
   font-size: 2rem;
   text-align: center;
+  padding-bottom: 3rem;
 }
 .function ul {
   display: grid;
@@ -64,7 +80,7 @@ header img {
   color: white;
   background-color: #9356DC;
   text-align: center;
-  width: 40px;
+  width: 37px;
   margin-left: -1.5rem;
 }
 .function_icon {
@@ -76,10 +92,13 @@ header img {
   background-color: #F2F2F2;
   height: 25rem;
   padding-top: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
 }
 .restaurants h2 {
   font-size: 2rem;
   text-align: center;
+  padding-bottom: 3rem;
 }
 .restaurants ul {
   list-style-type: none;
@@ -103,6 +122,7 @@ header img {
   width: 300px;
   height: 135px;
   border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
 }
 .restaurants_squares--flex {
   display: flex;
@@ -132,6 +152,7 @@ footer h2 {
   font-size: 2rem;
   text-align: center;
   margin: 0px;
+  font-family: "Shrikhand";
 }
 footer ul {
   list-style-type: none;
@@ -146,18 +167,6 @@ footer ul {
 }
 footer .footer_icon p {
   margin-left: 1rem;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("policeroboto/Roboto-Black.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url("policeroboto/Roboto-Bold.tff") format("turetype");
-}
-body {
-  font-family: "Roboto";
 }
 
 /*# sourceMappingURL=style.css.map */
