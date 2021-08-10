@@ -1,3 +1,8 @@
+ body  {
+     background-image: url("Maquettes_Ohmyfood/images/restaurants/image-1.jpg");
+     background-repeat: no-repeat;
+ }
+ 
  .menu {
     &_header {
         display: flex;
@@ -13,6 +18,20 @@
     }
     &_card {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 520px);;
+        justify-content: center;
+        grid-gap: 25rem;
+        grid-template-columns: repeat(auto-fill, 300px);
+        &--flex {
+            display: flex;
+            li:last-child {
+                margin-left: 7rem;
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+        border: 1px solid black;
+        padding-left: 0px;
     }
  }
+
