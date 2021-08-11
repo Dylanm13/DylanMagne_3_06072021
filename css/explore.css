@@ -1,11 +1,12 @@
 .explore {
   text-align: center;
   background-color: #F2F2F2;
-  height: 20rem;
-  padding-top: 2rem;
+  height: auto;
+  padding: 3rem;
 }
 .explore_text h1 {
   font-size: 2.5rem;
+  margin: 0px;
 }
 .explore_text p {
   font-size: 2rem;

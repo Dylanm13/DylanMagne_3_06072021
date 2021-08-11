@@ -23,11 +23,12 @@ header img {
 .explore {
   text-align: center;
   background-color: #F2F2F2;
-  height: 20rem;
-  padding-top: 2rem;
+  height: auto;
+  padding: 3rem;
 }
 .explore_text h1 {
   font-size: 2.5rem;
+  margin: 0px;
 }
 .explore_text p {
   font-size: 2rem;
@@ -151,16 +152,45 @@ footer ul {
   padding: 0px;
   margin: 0px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 320px);
-  grid-gap: 9rem;
+  grid-template-columns: repeat(auto-fill, 390px);
+  grid-gap: 2rem;
   margin-left: 7rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 3rem;
+}
+footer ul i {
+  margin-right: 1.5rem;
 }
 footer .footer_icon p {
   margin-left: 1rem;
 }
 
+header {
+  text-align: center;
+}
+header i {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.image_restaurant {
+  width: -webkit-fill-available;
+}
+
+.image_restaurant--2 {
+  width: -webkit-fill-available;
+  height: 40rem;
+  object-fit: cover;
+}
+
+.menu {
+  background-color: #F2F2F2;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
+  z-index: 1;
+  position: relative;
+  margin-top: -3rem;
+}
 .menu_header {
   display: flex;
   justify-content: center;
@@ -176,19 +206,38 @@ footer .footer_icon p {
 .menu_card {
   display: grid;
   justify-content: center;
-  grid-gap: 25rem;
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fill, 461px);
+  text-align: initial;
 }
 .menu_card--flex {
   display: flex;
+  justify-content: space-between;
 }
 .menu_card--flex li:last-child {
   margin-left: 7rem;
 }
+.menu h2 {
+  border-bottom: 3px solid #99E2D0;
+  width: fit-content;
+}
 .menu ul {
   list-style-type: none;
-  border: 1px solid black;
-  padding-left: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 5px grey;
+}
+.menu button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border-radius: 40px;
+  border: none;
+  font-size: 2rem;
+  height: 4.5rem;
+  padding: 0px 35px;
+  box-shadow: 2px 2px 5px grey;
+  margin: 3rem 0rem;
 }
 
 /*# sourceMappingURL=style.css.map */
