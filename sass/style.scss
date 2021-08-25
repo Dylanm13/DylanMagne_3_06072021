@@ -1,25 +1,19 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 @import "header.scss";
 @import "localisation.scss";
 @import "explore.scss";
 @import "function.scss";
 @import "restaurants.scss";
 @import "footer.scss";
+@import "menu-1.scss";
 
-@font-face {
-    font-family: "Roboto";
-    src: url("policeroboto/Roboto-Black.ttf") format("truetype");
-}
 
-@font-face {
-    font-family: "Roboto-Bold";
-    src: url("policeroboto/Roboto-Bold.tff") format("turetype");
-}
 
 $color-primary:#9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
 $color-quadra:#F2F2F2;
 
-body {
-    font-family: "Roboto";
-}

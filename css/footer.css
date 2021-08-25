@@ -7,17 +7,21 @@ footer h2 {
   font-size: 2rem;
   text-align: center;
   margin: 0px;
+  font-family: "Shrikhand";
 }
 footer ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 320px);
-  grid-gap: 9rem;
+  grid-template-columns: repeat(auto-fill, 390px);
+  grid-gap: 2rem;
   margin-left: 7rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 3rem;
+}
+footer ul i {
+  margin-right: 1.5rem;
 }
 footer .footer_icon p {
   margin-left: 1rem;
