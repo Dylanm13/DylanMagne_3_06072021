@@ -1,76 +1,17 @@
-header {
-  text-align: center;
-}
-header i {
-  font-size: 2rem;
-  padding-bottom: 2rem;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 54 |         border-bottom: 3px solid $color-tertiary;
+ *    |                                  ^^^^^^^^^^^^^^^
+ *    '
+ *   sass\menu-1.scss 54:34  root stylesheet */
 
-.image_restaurant {
-  width: -webkit-fill-available;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 54 \2502          border-bottom: 3px solid $color-tertiary;\d\a    \2502                                   ^^^^^^^^^^^^^^^\a    \2575 \a   sass\\menu-1.scss 54:34  root stylesheet";
 }
-
-.image_restaurant--2 {
-  width: -webkit-fill-available;
-  height: 40rem;
-  object-fit: cover;
-}
-
-.menu {
-  background-color: #F2F2F2;
-  text-align: center;
-  border-radius: 20px 20px 0px 0px;
-  z-index: 1;
-  position: relative;
-  margin-top: -3rem;
-}
-.menu_header {
-  display: flex;
-  justify-content: center;
-}
-.menu_header h1 {
-  font-family: "Shrikhand", cursive;
-}
-.menu_header--heart {
-  margin-left: 6.5rem;
-  font-size: 2rem;
-  margin-top: 1.5rem;
-}
-.menu_card {
-  display: grid;
-  justify-content: center;
-  grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fill, 461px);
-  text-align: initial;
-}
-.menu_card--flex {
-  display: flex;
-  justify-content: space-between;
-}
-.menu_card--flex li:last-child {
-  margin-left: 7rem;
-}
-.menu h2 {
-  border-bottom: 3px solid #99E2D0;
-  width: fit-content;
-}
-.menu ul {
-  list-style-type: none;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 2px 2px 5px grey;
-}
-.menu button {
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  border-radius: 40px;
-  border: none;
-  font-size: 2rem;
-  height: 4.5rem;
-  padding: 0px 35px;
-  box-shadow: 2px 2px 5px grey;
-  margin: 3rem 0rem;
-}
-
-/*# sourceMappingURL=menu-1.css.map */

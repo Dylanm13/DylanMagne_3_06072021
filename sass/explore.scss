@@ -1,14 +1,17 @@
-$color-primary:#9356DC;
-$color-secondary:#FF79DA;
-
 .explore {
     text-align: center;
-    background-color: #F2F2F2;
+    background-color: $color-quadra;
     height: auto;
     padding: 3rem;
+    @media all and (max-width: 1024px) {
+        padding: 6rem 3rem;    
+    }
     &_text h1 {
         font-size: 2.5rem;
         margin: 0px;
+        @media all and (max-width: 1024px) {
+            font-size: 4rem;
+        }
     }
     &_text p {
         font-size: 2rem;
@@ -22,5 +25,12 @@ $color-secondary:#FF79DA;
         height: 5rem;
         padding: 0px 35px;
         box-shadow: 2px 2px 5px grey;
+        @media all and (max-width: 1024px) {
+            border-radius: 70px;
+            font-size: 3rem;
+            height: 9rem;
+            padding: 0px 70px;
+            margin-top: 2rem;
+        }
     }
 }

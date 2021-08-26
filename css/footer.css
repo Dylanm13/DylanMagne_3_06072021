@@ -1,30 +1,17 @@
-footer {
-  background-color: grey;
-  color: white;
-  padding: 2rem 0rem;
-}
-footer h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin: 0px;
-  font-family: "Shrikhand";
-}
-footer ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 390px);
-  grid-gap: 2rem;
-  margin-left: 7rem;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-}
-footer ul i {
-  margin-right: 1.5rem;
-}
-footer .footer_icon p {
-  margin-left: 1rem;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 2 |     background-color: $color-sexta;
+ *   |                       ^^^^^^^^^^^^
+ *   '
+ *   sass\footer.scss 2:23  root stylesheet */
 
-/*# sourceMappingURL=footer.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      background-color: $color-sexta;\d\a   \2502                        ^^^^^^^^^^^^\a   \2575 \a   sass\\footer.scss 2:23  root stylesheet";
+}

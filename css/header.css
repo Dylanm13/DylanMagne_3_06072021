@@ -3,5 +3,11 @@ header img {
   margin-left: 2rem;
   margin-top: 2rem;
 }
+@media all and (max-width: 1024px) {
+  header img {
+    width: 32rem;
+    margin-left: 0rem;
+  }
+}
 
 /*# sourceMappingURL=header.css.map */

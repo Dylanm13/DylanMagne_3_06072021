@@ -1,25 +1,17 @@
-.explore {
-  text-align: center;
-  background-color: #F2F2F2;
-  height: auto;
-  padding: 3rem;
-}
-.explore_text h1 {
-  font-size: 2.5rem;
-  margin: 0px;
-}
-.explore_text p {
-  font-size: 2rem;
-}
-.explore_button {
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  border-radius: 40px;
-  border: none;
-  font-size: 2rem;
-  height: 5rem;
-  padding: 0px 35px;
-  box-shadow: 2px 2px 5px grey;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 3 |     background-color: $color-quadra;
+ *   |                       ^^^^^^^^^^^^^
+ *   '
+ *   sass\explore.scss 3:23  root stylesheet */
 
-/*# sourceMappingURL=explore.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-color: $color-quadra;\d\a   \2502                        ^^^^^^^^^^^^^\a   \2575 \a   sass\\explore.scss 3:23  root stylesheet";
+}

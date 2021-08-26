@@ -1,56 +1,17 @@
-.restaurants {
-  background-color: #F2F2F2;
-  height: auto;
-  padding-top: 2rem;
-  margin-top: 3rem;
-  padding-bottom: 2rem;
-}
-.restaurants h2 {
-  font-size: 2rem;
-  text-align: center;
-  padding-bottom: 3rem;
-}
-.restaurants ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
-.restaurants_grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  grid-gap: 11.5rem;
-  margin-left: 5rem;
-}
-.restaurants_squares {
-  width: 300px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 2px 2px 5px grey;
-  height: 200px;
-}
-.restaurants_squares--images {
-  width: 300px;
-  height: 135px;
-  border-radius: 20px 20px 0px 0px;
-  object-fit: cover;
-}
-.restaurants_squares--flex {
-  display: flex;
-}
-.restaurants_squares--names {
-  margin-left: 1rem;
-  margin-top: 0.3rem;
-  font-size: 1.2rem;
-}
-.restaurants_squares--places {
-  margin-left: 1rem;
-  margin-top: -1rem;
-  font-size: 1.2rem;
-}
-.restaurants_squares--heart {
-  margin-left: 15rem;
-  font-size: 1.5rem;
-  margin-top: -25px;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 14 |     background-color: $color-quadra;
+ *    |                       ^^^^^^^^^^^^^
+ *    '
+ *   sass\restaurants.scss 14:23  root stylesheet */
 
-/*# sourceMappingURL=restaurants.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 14 \2502      background-color: $color-quadra;\d\a    \2502                        ^^^^^^^^^^^^^\a    \2575 \a   sass\\restaurants.scss 14:23  root stylesheet";
+}

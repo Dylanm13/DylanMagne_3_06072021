@@ -1,38 +1,17 @@
-.function {
-  padding: 3rem 0rem;
-}
-.function h2 {
-  font-size: 2rem;
-  text-align: center;
-  padding-bottom: 3rem;
-}
-.function ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 520px);
-  grid-gap: 5rem;
-  justify-content: center;
-}
-.function_buttons {
-  display: flex;
-  font-size: 2rem;
-  border: 1px solid #F2F2F2;
-  box-shadow: 2px 2px 5px grey;
-  background-color: #F2F2F2;
-  border-radius: 30px;
-  margin-left: 2rem;
-}
-.function_numbers {
-  border: 1px solid #9356DC;
-  border-radius: 40px;
-  color: white;
-  background-color: #9356DC;
-  text-align: center;
-  width: 37px;
-  margin-left: -1.5rem;
-}
-.function_icon {
-  padding: 2rem 3rem;
-  color: grey;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 26 |         border: 1px solid $color-quadra;
+ *    |                           ^^^^^^^^^^^^^
+ *    '
+ *   sass\function.scss 26:27  root stylesheet */
 
-/*# sourceMappingURL=function.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 26 \2502          border: 1px solid $color-quadra;\d\a    \2502                            ^^^^^^^^^^^^^\a    \2575 \a   sass\\function.scss 26:27  root stylesheet";
+}
