@@ -1,17 +1,104 @@
-/* Error: Undefined variable.
- *    ,
- * 14 |     background-color: $color-quadra;
- *    |                       ^^^^^^^^^^^^^
- *    '
- *   sass\restaurants.scss 14:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 14 \2502      background-color: $color-quadra;\d\a    \2502                        ^^^^^^^^^^^^^\a    \2575 \a   sass\\restaurants.scss 14:23  root stylesheet";
+.restaurants {
+  background-color: #F6F6F6;
+  height: auto;
+  padding-top: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
 }
+.restaurants h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+@media all and (max-width: 1024px) {
+  .restaurants h2 {
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 3rem;
+  }
+}
+.restaurants ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.restaurants_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 11.5rem;
+  margin-left: 5rem;
+}
+@media all and (max-width: 1024px) {
+  .restaurants_grid {
+    grid-template-columns: repeat(1, 875px);
+    grid-gap: 2.5rem;
+    margin-left: 0px;
+    justify-content: center;
+  }
+}
+.restaurants_squares {
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px grey;
+  height: 200px;
+}
+@media all and (max-width: 1024px) {
+  .restaurants_squares {
+    width: 875px;
+    height: 610px;
+  }
+}
+.restaurants_squares--images {
+  width: 300px;
+  height: 135px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+@media all and (max-width: 1024px) {
+  .restaurants_squares--images {
+    width: 875px;
+    height: 455px;
+  }
+}
+.restaurants_squares--flex {
+  display: flex;
+}
+.restaurants_squares--names {
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+}
+@media all and (max-width: 1024px) {
+  .restaurants_squares--names {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+}
+.restaurants_squares--places {
+  margin-left: 1rem;
+  margin-top: -1rem;
+  font-size: 1.2rem;
+}
+@media all and (max-width: 1024px) {
+  .restaurants_squares--places {
+    margin-left: 2rem;
+    margin-top: -0.5rem;
+    font-size: 2.5rem;
+  }
+}
+.restaurants_squares--heart {
+  margin-left: 15rem;
+  font-size: 1.5rem;
+  margin-top: -25px;
+}
+@media all and (max-width: 1024px) {
+  .restaurants_squares--heart {
+    margin-left: 25rem;
+    margin-top: 20px;
+    font-size: 3.5rem;
+  }
+}
+
+/*# sourceMappingURL=restaurants.css.map */

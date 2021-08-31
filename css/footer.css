@@ -1,17 +1,42 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |     background-color: $color-sexta;
- *   |                       ^^^^^^^^^^^^
- *   '
- *   sass\footer.scss 2:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      background-color: $color-sexta;\d\a   \2502                        ^^^^^^^^^^^^\a   \2575 \a   sass\\footer.scss 2:23  root stylesheet";
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 2rem 0rem;
 }
+footer h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0px;
+  font-family: "Shrikhand";
+}
+@media all and (max-width: 1024px) {
+  footer h2 {
+    font-size: 3rem;
+    margin-left: 3rem;
+    text-align: left;
+  }
+}
+footer ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 390px);
+  grid-gap: 2rem;
+  margin-left: 7rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+@media all and (max-width: 1024px) {
+  footer ul {
+    grid-template-columns: repeat(1, 560px);
+    grid-gap: 1rem;
+    margin-left: 3rem;
+  }
+}
+footer ul i {
+  margin-right: 2.5rem;
+  font-size: 0.8rem;
+}
+
+/*# sourceMappingURL=footer.css.map */
