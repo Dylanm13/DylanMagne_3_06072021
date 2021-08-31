@@ -1,3 +1,7 @@
+header .logo_ohmyfood-homepage {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 header img {
   width: 20rem;
   margin-left: 2rem;
@@ -5,7 +9,7 @@ header img {
 }
 @media all and (max-width: 1024px) {
   header img {
-    width: 32rem;
+    width: 27rem;
     margin-left: 0rem;
   }
 }
@@ -250,7 +254,7 @@ header img {
 footer {
   background-color: #353535;
   color: white;
-  padding: 2rem 0rem;
+  padding: 4rem 0rem;
 }
 footer h2 {
   font-size: 2rem;
@@ -288,12 +292,15 @@ footer ul i {
   font-size: 0.8rem;
 }
 
-header {
-  text-align: center;
-}
 header i {
   font-size: 2rem;
-  padding-bottom: 2rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+header .logo_ohmyfood {
+  text-align: center;
+  margin-top: -6rem;
+  margin-bottom: 2rem;
 }
 
 .image_restaurant {
@@ -307,16 +314,29 @@ header i {
 }
 
 .menu {
-  background-color: #F2F2F2;
+  background-color: #F6F6F6;
   text-align: center;
   border-radius: 20px 20px 0px 0px;
   z-index: 1;
   position: relative;
   margin-top: -3rem;
 }
+@media all and (max-width: 1024px) {
+  .menu {
+    border-radius: 115px 115px 0px 0px;
+    margin-top: -7rem;
+  }
+}
 .menu_header {
   display: flex;
   justify-content: center;
+}
+@media all and (max-width: 1024px) {
+  .menu_header {
+    justify-content: flex-start;
+    margin-left: 5rem;
+    font-size: 2rem;
+  }
 }
 .menu_header h1 {
   font-family: "Shrikhand", cursive;
@@ -326,6 +346,25 @@ header i {
   font-size: 2rem;
   margin-top: 1.5rem;
 }
+@media all and (max-width: 1024px) {
+  .menu_header--heart {
+    margin-left: 8.5rem;
+    font-size: 4rem;
+    margin-top: 3.5rem;
+  }
+}
+.menu_header--heart_1 {
+  margin-left: 6.5rem;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+@media all and (max-width: 1024px) {
+  .menu_header--heart_1 {
+    margin-left: 15.5rem;
+    font-size: 4rem;
+    margin-top: 3.5rem;
+  }
+}
 .menu_card {
   display: grid;
   justify-content: center;
@@ -333,9 +372,19 @@ header i {
   grid-template-columns: repeat(auto-fill, 461px);
   text-align: initial;
 }
+@media all and (max-width: 1024px) {
+  .menu_card {
+    grid-template-columns: repeat(1, 900px);
+  }
+}
 .menu_card--flex {
   display: flex;
   justify-content: space-between;
+}
+@media all and (max-width: 1024px) {
+  .menu_card--flex {
+    font-size: 2rem;
+  }
 }
 .menu_card--flex li:last-child {
   margin-left: 7rem;
@@ -351,6 +400,12 @@ header i {
   background-color: white;
   box-shadow: 2px 2px 5px grey;
 }
+@media all and (max-width: 1024px) {
+  .menu ul {
+    padding: 30px;
+    border-radius: 35px;
+  }
+}
 .menu button {
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
@@ -362,9 +417,19 @@ header i {
   box-shadow: 2px 2px 5px grey;
   margin: 3rem 0rem;
 }
+@media all and (max-width: 1024px) {
+  .menu button {
+    border-radius: 70px;
+    font-size: 2.5rem;
+    height: 7rem;
+    padding: 0px 100px;
+    margin: 80px 0px;
+  }
+}
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,15 @@
 @import "colors.scss";
 
 header {
-    text-align: center;
     i {
         font-size: 2rem;
-        padding-bottom: 2rem;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+    .logo_ohmyfood {
+        text-align: center;
+        margin-top: -6rem;
+        margin-bottom: 2rem;
     }
 }
 .image_restaurant {
@@ -18,15 +23,24 @@ header {
 }
 
 .menu {
-    background-color: #F2F2F2;
+    background-color: $color-quadra;
     text-align: center;
     border-radius: 20px 20px 0px 0px;
     z-index: 1;
     position: relative;
     margin-top: -3rem;
+    @media all and (max-width: 1024px) {
+        border-radius: 115px 115px 0px 0px;
+        margin-top: -7rem;
+    }
     &_header {
         display: flex;
         justify-content: center;
+        @media all and (max-width: 1024px) {
+            justify-content: flex-start;
+            margin-left: 5rem;
+            font-size: 2rem;
+        }
         h1 {
             font-family: 'Shrikhand', cursive;
         }
@@ -34,6 +48,21 @@ header {
             margin-left: 6.5rem;
             font-size: 2rem;
             margin-top: 1.5rem;
+            @media all and (max-width: 1024px) {
+                margin-left: 8.5rem;
+                font-size: 4rem;
+                margin-top: 3.5rem;
+            }
+            &_1 {
+            margin-left: 6.5rem;
+            font-size: 2rem;
+            margin-top: 1.5rem;
+            @media all and (max-width: 1024px) {
+                margin-left: 15.5rem;
+                font-size: 4rem;
+                margin-top: 3.5rem;
+            }
+            }
         }
     }
     &_card {
@@ -42,9 +71,15 @@ header {
         grid-gap: 3rem;
         grid-template-columns: repeat(auto-fill, 461px);
         text-align: initial;
+        @media all and (max-width: 1024px) {
+            grid-template-columns: repeat(1, 900px);
+        }
         &--flex {
             display: flex;
             justify-content: space-between;
+            @media all and (max-width: 1024px) {
+                font-size: 2rem;
+            }
             li:last-child {
                 margin-left: 7rem;
             }
@@ -60,6 +95,10 @@ header {
         border-radius: 10px;
         background-color: white;
         box-shadow: 2px 2px 5px grey;
+        @media all and (max-width: 1024px) {
+            padding: 30px;
+            border-radius: 35px;
+        }
     }
     button {
         background: linear-gradient(#FF79DA, #9356DC);
@@ -71,6 +110,13 @@ header {
         padding: 0px 35px;
         box-shadow: 2px 2px 5px grey;
         margin: 3rem 0rem;
+        @media all and (max-width: 1024px) {
+            border-radius: 70px;
+            font-size: 2.5rem;
+            height: 7rem;
+            padding: 0px 100px;
+            margin: 80px 0px;
+        }
     }
  }
 
