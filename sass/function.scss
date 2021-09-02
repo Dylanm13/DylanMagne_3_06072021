@@ -1,7 +1,7 @@
 @import "colors.scss";
 
 .function {
-    padding: 3rem 0rem;
+    padding: 7rem 0rem;
     h2 {
         font-size: 2rem;
         text-align: center;
@@ -26,10 +26,16 @@
         display: flex;
         font-size: 2rem;
         border: 1px solid $color-quadra;
-        box-shadow: 2px 2px 5px grey;
+        box-shadow: 10px 15px 60px $shadow-color;
         background-color: $color-quadra;
-        border-radius: 30px;
+        border-radius: 50px;
         margin-left: 2rem;
+        height: 11rem;
+        &:hover,
+        &:active {
+            background-color: $function-activecolor;
+            
+        }
         @media all and (max-width: 1024px) {
             font-size: 3rem;
             margin-left: 0px;
@@ -43,15 +49,23 @@
         text-align: center;
         width: 37px;
         margin-left: -1.5rem;
+        margin-top: 3.5rem;
         @media all and (max-width: 1024px) {
             width: 60px;
+            height: 55px;
+            padding-top: 5px;
+            font-size: 2.5rem;
         }
     }
     &_icon {
         padding: 2rem 3rem;
         color: grey;
         @media all and (max-width: 1024px) {
-            padding: 3.5rem 3rem;
+            padding: 3.8rem 3rem;
         }
+    }
+    &_names {
+        font-weight: bold;
+        margin-top: 3.5rem;
     }
 }

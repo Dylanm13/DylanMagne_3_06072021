@@ -1,5 +1,5 @@
 .function {
-  padding: 3rem 0rem;
+  padding: 7rem 0rem;
 }
 .function h2 {
   font-size: 2rem;
@@ -29,10 +29,14 @@
   display: flex;
   font-size: 2rem;
   border: 1px solid #F6F6F6;
-  box-shadow: 2px 2px 5px grey;
+  box-shadow: 10px 15px 60px #DBDBDB;
   background-color: #F6F6F6;
-  border-radius: 30px;
+  border-radius: 50px;
   margin-left: 2rem;
+  height: 11rem;
+}
+.function_buttons:hover, .function_buttons:active {
+  background-color: #F5EDFF;
 }
 @media all and (max-width: 1024px) {
   .function_buttons {
@@ -48,10 +52,14 @@
   text-align: center;
   width: 37px;
   margin-left: -1.5rem;
+  margin-top: 3.5rem;
 }
 @media all and (max-width: 1024px) {
   .function_numbers {
     width: 60px;
+    height: 55px;
+    padding-top: 5px;
+    font-size: 2.5rem;
   }
 }
 .function_icon {
@@ -60,8 +68,12 @@
 }
 @media all and (max-width: 1024px) {
   .function_icon {
-    padding: 3.5rem 3rem;
+    padding: 3.8rem 3rem;
   }
+}
+.function_names {
+  font-weight: bold;
+  margin-top: 3.5rem;
 }
 
 /*# sourceMappingURL=function.css.map */
