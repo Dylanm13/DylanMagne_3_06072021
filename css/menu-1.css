@@ -3,10 +3,20 @@ header i {
   margin-top: 3rem;
   margin-left: 3rem;
 }
+@media all and (max-width: 1024px) {
+  header i {
+    font-size: 3rem;
+  }
+}
 header .logo_ohmyfood {
   text-align: center;
-  margin-top: -6rem;
+  margin-top: -5rem;
   margin-bottom: 2rem;
+}
+@media all and (max-width: 1024px) {
+  header .logo_ohmyfood {
+    margin-top: -6rem;
+  }
 }
 
 .image_restaurant {
@@ -47,11 +57,17 @@ header .logo_ohmyfood {
 .menu_header h1 {
   font-family: "Shrikhand", cursive;
   margin-top: 6rem;
+  font-size: 3rem;
+}
+@media all and (max-width: 1024px) {
+  .menu_header h1 {
+    font-size: 4rem;
+  }
 }
 .menu_header--heart {
   margin-left: 6.5rem;
-  font-size: 2rem;
-  margin-top: 1.5rem;
+  font-size: 3rem;
+  margin-top: 6.8rem;
 }
 .menu_header--heart:hover, .menu_header--heart:active {
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
@@ -68,8 +84,8 @@ header .logo_ohmyfood {
 }
 .menu_header--heart_1 {
   margin-left: 6.5rem;
-  font-size: 2rem;
-  margin-top: 1.5rem;
+  font-size: 3rem;
+  margin-top: 6.8rem;
 }
 .menu_header--heart_1:hover, .menu_header--heart_1:active {
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
@@ -88,7 +104,7 @@ header .logo_ohmyfood {
   display: grid;
   justify-content: center;
   grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fill, 461px);
+  grid-template-columns: repeat(auto-fill, 575px);
   text-align: initial;
 }
 @media all and (max-width: 1024px) {
@@ -99,10 +115,19 @@ header .logo_ohmyfood {
 }
 .menu_card--platename {
   font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+}
+@media all and (max-width: 1024px) {
+  .menu_card--platename {
+    font-size: 2.5rem;
+  }
 }
 .menu_card--flex {
   display: flex;
   justify-content: space-between;
+  font-size: 1.256rem;
+  margin-top: 0.5rem;
 }
 @media all and (max-width: 1024px) {
   .menu_card--flex {
@@ -119,18 +144,25 @@ header .logo_ohmyfood {
   font-weight: 300;
   margin-left: 1rem;
 }
+@media all and (max-width: 1024px) {
+  .menu h2 {
+    font-size: 2.5rem;
+  }
+}
 .menu ul {
   list-style-type: none;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 35px 25px;
+  border-radius: 30px;
   background-color: white;
   box-shadow: 0px 15px 15px #dbdbdb;
   margin: 35px 0px;
+  height: 3rem;
 }
 @media all and (max-width: 1024px) {
   .menu ul {
-    padding: 30px;
-    border-radius: 35px;
+    padding: 50px 30px;
+    border-radius: 45px;
+    height: 5rem;
   }
 }
 .menu button {
@@ -140,9 +172,14 @@ header .logo_ohmyfood {
   border: none;
   font-size: 2rem;
   height: 4.5rem;
-  padding: 0px 35px;
+  padding: 0px 60px;
   box-shadow: 0px 15px 25px #DBDBDB;
-  margin: 3rem 0rem;
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+}
+.menu button:hover {
+  background: linear-gradient(#fface8, #ae80e5);
+  box-shadow: 0px 15px 5px #DBDBDB;
 }
 @media all and (max-width: 1024px) {
   .menu button {

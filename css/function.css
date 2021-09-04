@@ -1,8 +1,13 @@
 .function {
   padding: 7rem 0rem;
 }
+@media all and (min-width: 1024px) {
+  .function {
+    padding: 4rem 0rem;
+  }
+}
 .function h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   padding-bottom: 3rem;
 }
@@ -15,9 +20,10 @@
 }
 .function ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 520px);
+  grid-template-columns: repeat(auto-fill, 570px);
   grid-gap: 5rem;
   justify-content: center;
+  padding: 0px;
 }
 @media all and (max-width: 1024px) {
   .function ul {
@@ -28,12 +34,16 @@
 .function_buttons {
   display: flex;
   font-size: 2rem;
-  border: 1px solid #F6F6F6;
   box-shadow: 10px 15px 60px #DBDBDB;
   background-color: #F6F6F6;
   border-radius: 50px;
   margin-left: 2rem;
   height: 11rem;
+}
+@media all and (min-width: 1024px) {
+  .function_buttons {
+    height: 8rem;
+  }
 }
 .function_buttons:hover, .function_buttons:active {
   background-color: #F5EDFF;
@@ -50,9 +60,17 @@
   color: white;
   background-color: #9356DC;
   text-align: center;
-  width: 37px;
+  width: 40px;
+  height: 35px;
   margin-left: -1.5rem;
   margin-top: 3.5rem;
+  padding-top: 5px;
+  font-size: 1.5rem;
+}
+@media all and (min-width: 1024px) {
+  .function_numbers {
+    margin-top: 2.5rem;
+  }
 }
 @media all and (max-width: 1024px) {
   .function_numbers {
@@ -63,7 +81,7 @@
   }
 }
 .function_icon {
-  padding: 2rem 3rem;
+  padding: 2.7rem 3rem;
   color: grey;
 }
 @media all and (max-width: 1024px) {
@@ -73,7 +91,12 @@
 }
 .function_names {
   font-weight: bold;
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
+}
+@media all and (max-width: 1024px) {
+  .function_names {
+    margin-top: 3.5rem;
+  }
 }
 
 /*# sourceMappingURL=function.css.map */

@@ -2,6 +2,12 @@ footer {
   background-color: #353535;
   color: white;
   padding: 4rem 0rem;
+  text-align: center;
+}
+@media all and (max-width: 1024px) {
+  footer {
+    text-align: inherit;
+  }
 }
 footer h2 {
   font-size: 2rem;
@@ -12,32 +18,40 @@ footer h2 {
 }
 @media all and (max-width: 1024px) {
   footer h2 {
-    font-size: 2.5rem;
-    margin-left: 3rem;
+    font-size: 3rem;
+    margin-left: 6rem;
     text-align: left;
   }
 }
 footer ul {
   list-style-type: none;
-  padding: 0px;
+  padding-top: 5rem;
   margin: 0px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 390px);
   grid-gap: 2rem;
-  margin-left: 7rem;
   font-size: 1.5rem;
-  margin-top: 3rem;
+  justify-content: center;
 }
 @media all and (max-width: 1024px) {
   footer ul {
-    grid-template-columns: repeat(1, 560px);
-    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 575px);
+    grid-gap: 1.2rem;
     margin-left: 3rem;
+    justify-content: inherit;
+    font-size: 2.5rem;
+    padding-top: 3rem;
   }
 }
 footer ul i {
-  margin-right: 2.5rem;
-  font-size: 0.8rem;
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+}
+@media all and (max-width: 1024px) {
+  footer ul i {
+    margin-right: 2.5rem;
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

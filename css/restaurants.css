@@ -6,16 +6,18 @@
   padding-bottom: 9rem;
 }
 .restaurants h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
 }
 @media all and (max-width: 1024px) {
   .restaurants h2 {
     font-size: 3rem;
     text-align: left;
     margin-left: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
   }
 }
 .restaurants ul {
@@ -25,9 +27,9 @@
 }
 .restaurants_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  grid-gap: 11.5rem;
-  margin-left: 5rem;
+  grid-template-columns: repeat(auto-fill, 375px);
+  grid-gap: 6.5rem;
+  justify-content: center;
 }
 @media all and (max-width: 1024px) {
   .restaurants_grid {
@@ -44,6 +46,12 @@
   margin: 0px;
   background-color: #99E2D0;
   color: #008766;
+  left: 16rem;
+  top: 1.5rem;
+  font-size: 1rem;
+  padding: 7px 19px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 @media all and (max-width: 1024px) {
   .restaurants_new {
@@ -56,28 +64,33 @@
   }
 }
 .restaurants_squares {
-  width: 300px;
+  width: 375px;
   background-color: white;
-  border-radius: 45px;
-  box-shadow: 2px 2px 5px grey;
-  height: 200px;
+  border-radius: 30px;
+  box-shadow: 0px 15px 15px #DBDBDB;
+  height: 275px;
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares {
     width: 875px;
     height: 610px;
+    border-radius: 45px;
   }
 }
 .restaurants_squares--images {
-  width: 300px;
-  height: 135px;
-  border-radius: 45px 45px 0px 0px;
+  width: 375px;
+  height: 200px;
+  border-radius: 30px 30px 0px 0px;
   object-fit: cover;
+}
+.restaurants_squares--images-new {
+  margin-top: -33px;
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--images {
     width: 875px;
     height: 455px;
+    border-radius: 45px 45px 0px 0px;
   }
   .restaurants_squares--images-new {
     margin-top: -5rem;
@@ -112,15 +125,28 @@
   }
 }
 .restaurants_squares--heart {
-  margin-left: 15rem;
+  margin-left: 9rem;
   font-size: 1.5rem;
-  margin-top: -25px;
+  margin-top: 20px;
 }
 .restaurants_squares--heart:hover, .restaurants_squares--heart:active {
+  opacity: 0;
+  -webkit-background-clip: text;
+  transition: opacity 2s;
+}
+.restaurants_squares--heart-fill {
+  margin-left: -25px;
+  font-size: 1.5rem;
+  margin-top: 20px;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   color: transparent;
   -webkit-background-clip: text;
+  opacity: 0;
   font-weight: 600;
+}
+.restaurants_squares--heart-fill:hover {
+  opacity: 1;
+  transition: opacity 2s;
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--heart {
