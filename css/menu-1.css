@@ -64,42 +64,6 @@ header .logo_ohmyfood {
     font-size: 4rem;
   }
 }
-.menu_header--heart {
-  margin-left: 6.5rem;
-  font-size: 3rem;
-  margin-top: 6.8rem;
-}
-.menu_header--heart:hover, .menu_header--heart:active {
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  color: transparent;
-  -webkit-background-clip: text;
-  font-weight: 600;
-}
-@media all and (max-width: 1024px) {
-  .menu_header--heart {
-    margin-left: 8.5rem;
-    font-size: 4rem;
-    margin-top: 6.5rem;
-  }
-}
-.menu_header--heart_1 {
-  margin-left: 6.5rem;
-  font-size: 3rem;
-  margin-top: 6.8rem;
-}
-.menu_header--heart_1:hover, .menu_header--heart_1:active {
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  color: transparent;
-  -webkit-background-clip: text;
-  font-weight: 600;
-}
-@media all and (max-width: 1024px) {
-  .menu_header--heart_1 {
-    margin-left: 15.5rem;
-    font-size: 4rem;
-    margin-top: 6.5rem;
-  }
-}
 .menu_card {
   display: grid;
   justify-content: center;

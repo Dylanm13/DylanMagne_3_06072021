@@ -315,39 +315,91 @@ header img {
     font-size: 2.5rem;
   }
 }
-.restaurants_squares--heart {
+
+.restaurants_squares--animation {
   margin-left: 9rem;
   font-size: 1.5rem;
   margin-top: 20px;
 }
-.restaurants_squares--heart:hover, .restaurants_squares--heart:active {
-  opacity: 0;
-  -webkit-background-clip: text;
-  transition: opacity 2s;
+.restaurants_squares--animation-1 {
+  margin-left: 11rem;
 }
-.restaurants_squares--heart-fill {
-  margin-left: -25px;
-  font-size: 1.5rem;
-  margin-top: 20px;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  color: transparent;
-  -webkit-background-clip: text;
-  opacity: 0;
-  font-weight: 600;
-}
-.restaurants_squares--heart-fill:hover {
-  opacity: 1;
-  transition: opacity 2s;
+.restaurants_squares--animation-2 {
+  margin-left: 11rem;
+  font-size: 3.5rem;
+  margin-top: 6rem;
 }
 @media all and (max-width: 1024px) {
-  .restaurants_squares--heart {
+  .restaurants_squares--animation {
     margin-left: 22rem;
     margin-top: 20px;
     font-size: 3.5rem;
   }
-  .restaurants_squares--heart-1 {
+  .restaurants_squares--animation-1 {
     margin-left: 28rem;
   }
+  .restaurants_squares--animation-2 {
+    margin-left: 7rem;
+    margin-top: 6rem;
+    font-size: 4.5rem;
+    width: 80px;
+    height: 75px;
+  }
+  .restaurants_squares--animation-3 {
+    margin-left: 16rem;
+    margin-top: 6rem;
+    font-size: 4.5rem;
+    width: 80px;
+    height: 75px;
+  }
+}
+.restaurants_squares--animation-heart {
+  position: absolute;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  color: transparent;
+  -webkit-background-clip: text;
+  width: 25px;
+}
+.restaurants_squares--animation-heart-2 {
+  width: 56px;
+}
+@media all and (max-width: 1024px) {
+  .restaurants_squares--animation-heart {
+    width: 70px;
+  }
+}
+.restaurants_squares--animation-heart:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
+  font-size: 1.6rem;
+}
+@media all and (max-width: 1024px) {
+  .restaurants_squares--animation-heart-2 {
+    width: 80px;
+  }
+}
+.restaurants_squares--animation-heartfill {
+  cursor: pointer;
+  position: relative;
+  top: -2px;
+  background-color: white;
+}
+.restaurants_squares--animation-heartfill:hover {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+@media all and (max-width: 1024px) {
+  .restaurants_squares--animation-heartfill {
+    width: 70px;
+    height: 65px;
+  }
+  .restaurants_squares--animation-heartfill-1 {
+    width: 80px;
+  }
+}
+.restaurants_squares--animation-heartfill-1 {
+  background-color: #F6F6F6;
 }
 
 footer {
@@ -470,42 +522,6 @@ header .logo_ohmyfood {
 @media all and (max-width: 1024px) {
   .menu_header h1 {
     font-size: 4rem;
-  }
-}
-.menu_header--heart {
-  margin-left: 6.5rem;
-  font-size: 3rem;
-  margin-top: 6.8rem;
-}
-.menu_header--heart:hover, .menu_header--heart:active {
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  color: transparent;
-  -webkit-background-clip: text;
-  font-weight: 600;
-}
-@media all and (max-width: 1024px) {
-  .menu_header--heart {
-    margin-left: 8.5rem;
-    font-size: 4rem;
-    margin-top: 6.5rem;
-  }
-}
-.menu_header--heart_1 {
-  margin-left: 6.5rem;
-  font-size: 3rem;
-  margin-top: 6.8rem;
-}
-.menu_header--heart_1:hover, .menu_header--heart_1:active {
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  color: transparent;
-  -webkit-background-clip: text;
-  font-weight: 600;
-}
-@media all and (max-width: 1024px) {
-  .menu_header--heart_1 {
-    margin-left: 15.5rem;
-    font-size: 4rem;
-    margin-top: 6.5rem;
   }
 }
 .menu_card {

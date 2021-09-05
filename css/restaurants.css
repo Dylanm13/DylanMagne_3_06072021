@@ -124,39 +124,5 @@
     font-size: 2.5rem;
   }
 }
-.restaurants_squares--heart {
-  margin-left: 9rem;
-  font-size: 1.5rem;
-  margin-top: 20px;
-}
-.restaurants_squares--heart:hover, .restaurants_squares--heart:active {
-  opacity: 0;
-  -webkit-background-clip: text;
-  transition: opacity 2s;
-}
-.restaurants_squares--heart-fill {
-  margin-left: -25px;
-  font-size: 1.5rem;
-  margin-top: 20px;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  color: transparent;
-  -webkit-background-clip: text;
-  opacity: 0;
-  font-weight: 600;
-}
-.restaurants_squares--heart-fill:hover {
-  opacity: 1;
-  transition: opacity 2s;
-}
-@media all and (max-width: 1024px) {
-  .restaurants_squares--heart {
-    margin-left: 22rem;
-    margin-top: 20px;
-    font-size: 3.5rem;
-  }
-  .restaurants_squares--heart-1 {
-    margin-left: 28rem;
-  }
-}
 
 /*# sourceMappingURL=restaurants.css.map */
