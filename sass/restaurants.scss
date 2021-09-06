@@ -1,9 +1,10 @@
-$color-quadra:#F2F2F2;
+@import "colors.scss";
 
 @mixin squares_text-top {
     margin-left: 1rem;
     margin-top: 0.3rem;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 @mixin squares_text-bot {
@@ -17,11 +18,17 @@ $color-quadra:#F2F2F2;
     height: auto;
     padding-top: 2rem;
     margin-top: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 9rem;
     h2 {
         font-size: 2rem;
         text-align: center;
-        padding-bottom: 3rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        @media all and (max-width: 1024px) {
+            font-size: 3rem;
+            text-align: left;
+            margin-left: 3rem;
+        }
     }
     ul {
         list-style-type: none;
@@ -33,34 +40,91 @@ $color-quadra:#F2F2F2;
         grid-template-columns: repeat(auto-fill, 300px);
         grid-gap: 11.5rem;
         margin-left: 5rem;
+        @media all and (max-width: 1024px) {
+            grid-template-columns: repeat(1, 875px);
+            grid-gap: 2.5rem;
+            margin-left: 0px;
+            justify-content: center;
+        }
+    }
+    &_new {
+        z-index: 1;
+        position: relative;
+        width: fit-content;
+        margin: 0px;
+        background-color: #99E2D0;
+        color: #008766;
+        @media all and (max-width: 1024px) {
+        left: 39rem;
+        top: 2rem;
+        font-size: 2.5rem;
+        padding: 15px 30px;
+        font-weight: bold;
+        border-radius: 5px;
+        }
     }
     &_squares {
         width: 300px;
         background-color: white;
-        border-radius: 20px;
+        border-radius: 45px;
         box-shadow: 2px 2px 5px grey;
         height: 200px;
-
+        @media all and (max-width: 1024px) {
+            width: 875px;
+            height: 610px;
+        }
         &--images {
             width: 300px;
             height: 135px;
-            border-radius: 20px 20px 0px 0px;
+            border-radius: 45px 45px 0px 0px;
             object-fit: cover;
+            @media all and (max-width: 1024px) {
+                width: 875px;
+                height: 455px;
+                &-new {
+                    margin-top: -5rem;
+                }
+            }
         }
         &--flex {
             display: flex
         }
         &--names {
             @include squares_text-top;
+            @media all and (max-width: 1024px) {
+                margin-left: 2rem;
+                margin-top: 1rem;
+                font-size: 2.8rem;
+            }
         }
         &--places {
             @include squares_text-bot;
+            @media all and (max-width: 1024px) {
+                margin-left: 2rem;
+                margin-top: -0.5rem;
+                font-size: 2.5rem;
+            }
         }
         &--heart {
             margin-left: 15rem;
             font-size: 1.5rem;
             margin-top: -25px;
+            &:hover,
+            &:active {
+                background: -webkit-linear-gradient(#FF79DA, #9356DC);
+                color: transparent;
+                -webkit-background-clip: text;
+                font-weight: 600;
+            }
+            @media all and (max-width: 1024px) {
+                margin-left: 22rem;
+                margin-top: 20px;
+                font-size: 3.5rem;
+                &-1 {
+                    margin-left: 28rem;
+                }
+            }
         }
     }
-    
 }
+    

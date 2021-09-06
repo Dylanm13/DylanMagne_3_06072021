@@ -1,12 +1,20 @@
+@import "colors.scss";
+
 footer {
-    background-color: grey;
+    background-color: $color-sexta;
     color: white;
-    padding: 2rem 0rem;
+    padding: 4rem 0rem;
     h2 {
         font-size: 2rem;
         text-align: center;
         margin: 0px;
         font-family: "Shrikhand";
+        font-weight: 200;
+        @media all and (max-width: 1024px) {
+            font-size: 2.5rem;
+            margin-left: 3rem;
+            text-align: left;
+        }
     }
     ul {
         list-style-type: none;
@@ -18,13 +26,14 @@ footer {
         margin-left: 7rem;
         font-size: 1.5rem;
         margin-top: 3rem;
-        i {
-            margin-right: 1.5rem;
+        @media all and (max-width: 1024px) {
+            grid-template-columns: repeat(1, 560px);
+            grid-gap: 1rem;
+            margin-left: 3rem;
         }
-    }
-    .footer_icon {
-        p {
-            margin-left: 1rem;
+        i {
+            margin-right: 2.5rem;
+            font-size: 0.8rem;
         }
     }
 }

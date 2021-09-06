@@ -1,7 +1,4 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
+@import "colors.scss";
 @import "header.scss";
 @import "localisation.scss";
 @import "explore.scss";
@@ -10,10 +7,11 @@ body {
 @import "footer.scss";
 @import "menu-1.scss";
 
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
 
 
-$color-primary:#9356DC;
-$color-secondary:#FF79DA;
-$color-tertiary:#99E2D0;
-$color-quadra:#F2F2F2;
+
 

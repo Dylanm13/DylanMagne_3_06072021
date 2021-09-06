@@ -6,8 +6,22 @@
 .localisation_icon {
   margin-top: 2rem;
 }
+@media all and (max-width: 1024px) {
+  .localisation_icon {
+    margin-top: 3rem;
+  }
+}
 .localisation_text {
   margin-left: 2rem;
+}
+@media all and (max-width: 1024px) {
+  .localisation {
+    justify-content: center;
+    margin-left: 0rem;
+    background-color: #EAEAEA;
+    font-size: 3rem;
+    box-shadow: inset 0px 10px 10px #DBDBDB;
+  }
 }
 
 /*# sourceMappingURL=localisation.css.map */

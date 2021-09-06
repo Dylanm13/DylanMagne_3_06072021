@@ -1,11 +1,23 @@
+@import "colors.scss";
+
 .localisation {
     display: flex;
     font-size: 2rem;
     margin-left: 2rem;
     &_icon {
        margin-top: 2rem;
+       @media all and (max-width: 1024px) {
+        margin-top: 3rem;
+    }
     }
     &_text {
         margin-left: 2rem;
+    }
+    @media all and (max-width: 1024px) {
+            justify-content: center;
+            margin-left: 0rem;
+            background-color: $color-quinta;
+            font-size: 3rem;
+            box-shadow: inset 0px 10px 10px $shadow-color;
     }
 }

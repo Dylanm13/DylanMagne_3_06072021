@@ -1,10 +1,17 @@
 .function {
-  padding: 3rem 0rem;
+  padding: 7rem 0rem;
 }
 .function h2 {
   font-size: 2rem;
   text-align: center;
   padding-bottom: 3rem;
+}
+@media all and (max-width: 1024px) {
+  .function h2 {
+    font-size: 4rem;
+    text-align: left;
+    margin-left: 3rem;
+  }
 }
 .function ul {
   display: grid;
@@ -12,14 +19,30 @@
   grid-gap: 5rem;
   justify-content: center;
 }
+@media all and (max-width: 1024px) {
+  .function ul {
+    grid-template-columns: repeat(1, 850px);
+    padding: 0px;
+  }
+}
 .function_buttons {
   display: flex;
   font-size: 2rem;
-  border: 1px solid #F2F2F2;
-  box-shadow: 2px 2px 5px grey;
-  background-color: #F2F2F2;
-  border-radius: 30px;
+  border: 1px solid #F6F6F6;
+  box-shadow: 10px 15px 60px #DBDBDB;
+  background-color: #F6F6F6;
+  border-radius: 50px;
   margin-left: 2rem;
+  height: 11rem;
+}
+.function_buttons:hover, .function_buttons:active {
+  background-color: #F5EDFF;
+}
+@media all and (max-width: 1024px) {
+  .function_buttons {
+    font-size: 3rem;
+    margin-left: 0px;
+  }
 }
 .function_numbers {
   border: 1px solid #9356DC;
@@ -29,10 +52,28 @@
   text-align: center;
   width: 37px;
   margin-left: -1.5rem;
+  margin-top: 3.5rem;
+}
+@media all and (max-width: 1024px) {
+  .function_numbers {
+    width: 60px;
+    height: 55px;
+    padding-top: 5px;
+    font-size: 2.5rem;
+  }
 }
 .function_icon {
   padding: 2rem 3rem;
   color: grey;
+}
+@media all and (max-width: 1024px) {
+  .function_icon {
+    padding: 3.8rem 3rem;
+  }
+}
+.function_names {
+  font-weight: bold;
+  margin-top: 3.5rem;
 }
 
 /*# sourceMappingURL=function.css.map */
