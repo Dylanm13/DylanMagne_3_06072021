@@ -11,6 +11,11 @@
   font-size: 3.5rem;
   margin-top: 6rem;
 }
+.restaurants_squares--animation-3 {
+  margin-left: 11rem;
+  font-size: 3.5rem;
+  margin-top: 6rem;
+}
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation {
     margin-left: 22rem;

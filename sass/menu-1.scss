@@ -20,10 +20,6 @@ header {
 }
 .image_restaurant {
     width: -webkit-fill-available;
-}
-
-.image_restaurant--2 {
-    width: -webkit-fill-available;
     height: 40rem;
     object-fit: cover;
 }
@@ -31,10 +27,10 @@ header {
 .menu {
     background-color: $color-quadra;
     text-align: center;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 75px 75px 0px 0px;
     z-index: 1;
     position: relative;
-    margin-top: -3rem;
+    margin-top: -5rem;
     @media all and (max-width: 1024px) {
         border-radius: 115px 115px 0px 0px;
         margin-top: -7rem;
@@ -54,6 +50,52 @@ header {
             @media all and (max-width: 1024px) {
                 font-size: 4rem;
             }
+        }
+    }
+    &_container {
+        list-style-type: none;
+        padding: 35px 25px;
+        border-radius: 30px;
+        background-color: white;
+        box-shadow: 0px 15px 15px #dbdbdb;
+        margin: 35px 0px;
+        height: 3rem;
+        cursor: pointer;
+        animation: opacity 1s both;
+            &-1 {
+                animation-delay: 0.1s;
+            }
+            &-2 {
+                animation-delay: 0.2s;
+            }
+            &-3 {
+                animation-delay: 0.3s;
+            }
+            &-4 {
+                animation-delay: 0.4s;
+            }
+            &-5 {
+                animation-delay: 0.5s;
+            }
+            &-6 {
+                animation-delay: 0.6s;
+            }
+            &-7 {
+                animation-delay: 0.7s;
+            }
+            &-8 {
+                animation-delay: 0.8s;
+            }
+            &-9 {
+                animation-delay: 0.9s;
+            }
+            &-10 {
+                animation-delay: 1s;
+            }
+        @media all and (max-width: 1024px) {
+            padding: 50px 30px;
+            border-radius: 45px;
+            height: 5rem;
         }
     }
     &_card {
@@ -97,20 +139,6 @@ header {
             font-size: 2.5rem;
         }
     }
-    ul {
-        list-style-type: none;
-        padding: 35px 25px;
-        border-radius: 30px;
-        background-color: white;
-        box-shadow: 0px 15px 15px #dbdbdb;
-        margin: 35px 0px;
-        height: 3rem;
-        @media all and (max-width: 1024px) {
-            padding: 50px 30px;
-            border-radius: 45px;
-            height: 5rem;
-        }
-    }
     button {
         background: linear-gradient($color-secondary, $color-primary);
         color: white;
@@ -122,10 +150,12 @@ header {
         box-shadow: 0px 15px 25px $shadow-color;
         margin-top: 4rem;
         margin-bottom: 7rem;
+        cursor: pointer;
         &:hover
         {
             background: linear-gradient(lighten($color-secondary, 10), lighten($color-primary, 10));
             box-shadow: 0px 15px 5px $shadow-color;
+            transition: 1s;
         }
         @media all and (max-width: 1024px) {
             border-radius: 70px;
@@ -138,3 +168,11 @@ header {
     }
  }
 
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

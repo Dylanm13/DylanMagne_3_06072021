@@ -21,10 +21,6 @@ header .logo_ohmyfood {
 
 .image_restaurant {
   width: -webkit-fill-available;
-}
-
-.image_restaurant--2 {
-  width: -webkit-fill-available;
   height: 40rem;
   object-fit: cover;
 }
@@ -32,10 +28,10 @@ header .logo_ohmyfood {
 .menu {
   background-color: #F6F6F6;
   text-align: center;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 75px 75px 0px 0px;
   z-index: 1;
   position: relative;
-  margin-top: -3rem;
+  margin-top: -5rem;
 }
 @media all and (max-width: 1024px) {
   .menu {
@@ -62,6 +58,54 @@ header .logo_ohmyfood {
 @media all and (max-width: 1024px) {
   .menu_header h1 {
     font-size: 4rem;
+  }
+}
+.menu_container {
+  list-style-type: none;
+  padding: 35px 25px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0px 15px 15px #dbdbdb;
+  margin: 35px 0px;
+  height: 3rem;
+  cursor: pointer;
+  animation: opacity 1s both;
+}
+.menu_container-1 {
+  animation-delay: 0.1s;
+}
+.menu_container-2 {
+  animation-delay: 0.2s;
+}
+.menu_container-3 {
+  animation-delay: 0.3s;
+}
+.menu_container-4 {
+  animation-delay: 0.4s;
+}
+.menu_container-5 {
+  animation-delay: 0.5s;
+}
+.menu_container-6 {
+  animation-delay: 0.6s;
+}
+.menu_container-7 {
+  animation-delay: 0.7s;
+}
+.menu_container-8 {
+  animation-delay: 0.8s;
+}
+.menu_container-9 {
+  animation-delay: 0.9s;
+}
+.menu_container-10 {
+  animation-delay: 1s;
+}
+@media all and (max-width: 1024px) {
+  .menu_container {
+    padding: 50px 30px;
+    border-radius: 45px;
+    height: 5rem;
   }
 }
 .menu_card {
@@ -113,22 +157,6 @@ header .logo_ohmyfood {
     font-size: 2.5rem;
   }
 }
-.menu ul {
-  list-style-type: none;
-  padding: 35px 25px;
-  border-radius: 30px;
-  background-color: white;
-  box-shadow: 0px 15px 15px #dbdbdb;
-  margin: 35px 0px;
-  height: 3rem;
-}
-@media all and (max-width: 1024px) {
-  .menu ul {
-    padding: 50px 30px;
-    border-radius: 45px;
-    height: 5rem;
-  }
-}
 .menu button {
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
@@ -140,10 +168,12 @@ header .logo_ohmyfood {
   box-shadow: 0px 15px 25px #DBDBDB;
   margin-top: 4rem;
   margin-bottom: 7rem;
+  cursor: pointer;
 }
 .menu button:hover {
   background: linear-gradient(#fface8, #ae80e5);
   box-shadow: 0px 15px 5px #DBDBDB;
+  transition: 1s;
 }
 @media all and (max-width: 1024px) {
   .menu button {
@@ -153,6 +183,15 @@ header .logo_ohmyfood {
     padding: 0px 100px;
     margin-top: 80px;
     margin-bottom: 160px;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

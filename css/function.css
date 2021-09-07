@@ -39,6 +39,7 @@
   border-radius: 50px;
   margin-left: 2rem;
   height: 11rem;
+  cursor: pointer;
 }
 @media all and (min-width: 1024px) {
   .function_buttons {
@@ -47,6 +48,12 @@
 }
 .function_buttons:hover, .function_buttons:active {
   background-color: #F5EDFF;
+  box-shadow: 10px 15px 20px #DBDBDB;
+  transition: 1s;
+}
+.function_buttons:hover .function_icon, .function_buttons:active .function_icon {
+  color: #9356DC;
+  transition: 1s;
 }
 @media all and (max-width: 1024px) {
   .function_buttons {

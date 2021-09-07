@@ -70,6 +70,10 @@
   box-shadow: 0px 15px 15px #DBDBDB;
   height: 275px;
 }
+.restaurants_squares:hover {
+  transition: 0.5s;
+  transform: scale(1.03);
+}
 @media all and (max-width: 1024px) {
   .restaurants_squares {
     width: 875px;

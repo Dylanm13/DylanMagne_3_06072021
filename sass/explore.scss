@@ -28,10 +28,12 @@
         height: 5rem;
         padding: 0px 35px;
         box-shadow: 0px 15px 25px $shadow-color;
+        cursor: pointer;
         &:hover
         {
             background: linear-gradient(lighten($color-secondary, 10), lighten($color-primary, 10));
             box-shadow: 0px 15px 5px $shadow-color;
+            transition: 1s;
         }
         @media all and (max-width: 1024px) {
             border-radius: 70px;

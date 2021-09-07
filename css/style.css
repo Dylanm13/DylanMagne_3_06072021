@@ -1,3 +1,70 @@
+.spinner {
+  height: 100%;
+  background: white;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  animation: spinner 2s linear;
+  visibility: hidden;
+}
+.spinner_border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid transparent;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: spinner-border 2s linear;
+  z-index: 10;
+  visibility: hidden;
+}
+.spinner_center {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #99E2D0;
+}
+
+@keyframes spinner {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes spinner-border {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 header .logo_ohmyfood-homepage {
   text-align: center;
   margin-bottom: 2rem;
@@ -73,10 +140,12 @@ header img {
   height: 5rem;
   padding: 0px 35px;
   box-shadow: 0px 15px 25px #DBDBDB;
+  cursor: pointer;
 }
 .explore_button:hover {
   background: linear-gradient(#fface8, #ae80e5);
   box-shadow: 0px 15px 5px #DBDBDB;
+  transition: 1s;
 }
 @media all and (max-width: 1024px) {
   .explore_button {
@@ -129,6 +198,7 @@ header img {
   border-radius: 50px;
   margin-left: 2rem;
   height: 11rem;
+  cursor: pointer;
 }
 @media all and (min-width: 1024px) {
   .function_buttons {
@@ -137,6 +207,12 @@ header img {
 }
 .function_buttons:hover, .function_buttons:active {
   background-color: #F5EDFF;
+  box-shadow: 10px 15px 20px #DBDBDB;
+  transition: 1s;
+}
+.function_buttons:hover .function_icon, .function_buttons:active .function_icon {
+  color: #9356DC;
+  transition: 1s;
 }
 @media all and (max-width: 1024px) {
   .function_buttons {
@@ -261,6 +337,10 @@ header img {
   box-shadow: 0px 15px 15px #DBDBDB;
   height: 275px;
 }
+.restaurants_squares:hover {
+  transition: 0.5s;
+  transform: scale(1.03);
+}
 @media all and (max-width: 1024px) {
   .restaurants_squares {
     width: 875px;
@@ -325,6 +405,11 @@ header img {
   margin-left: 11rem;
 }
 .restaurants_squares--animation-2 {
+  margin-left: 11rem;
+  font-size: 3.5rem;
+  margin-top: 6rem;
+}
+.restaurants_squares--animation-3 {
   margin-left: 11rem;
   font-size: 3.5rem;
   margin-top: 6rem;
@@ -481,10 +566,6 @@ header .logo_ohmyfood {
 
 .image_restaurant {
   width: -webkit-fill-available;
-}
-
-.image_restaurant--2 {
-  width: -webkit-fill-available;
   height: 40rem;
   object-fit: cover;
 }
@@ -492,10 +573,10 @@ header .logo_ohmyfood {
 .menu {
   background-color: #F6F6F6;
   text-align: center;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 75px 75px 0px 0px;
   z-index: 1;
   position: relative;
-  margin-top: -3rem;
+  margin-top: -5rem;
 }
 @media all and (max-width: 1024px) {
   .menu {
@@ -522,6 +603,54 @@ header .logo_ohmyfood {
 @media all and (max-width: 1024px) {
   .menu_header h1 {
     font-size: 4rem;
+  }
+}
+.menu_container {
+  list-style-type: none;
+  padding: 35px 25px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0px 15px 15px #dbdbdb;
+  margin: 35px 0px;
+  height: 3rem;
+  cursor: pointer;
+  animation: opacity 1s both;
+}
+.menu_container-1 {
+  animation-delay: 0.1s;
+}
+.menu_container-2 {
+  animation-delay: 0.2s;
+}
+.menu_container-3 {
+  animation-delay: 0.3s;
+}
+.menu_container-4 {
+  animation-delay: 0.4s;
+}
+.menu_container-5 {
+  animation-delay: 0.5s;
+}
+.menu_container-6 {
+  animation-delay: 0.6s;
+}
+.menu_container-7 {
+  animation-delay: 0.7s;
+}
+.menu_container-8 {
+  animation-delay: 0.8s;
+}
+.menu_container-9 {
+  animation-delay: 0.9s;
+}
+.menu_container-10 {
+  animation-delay: 1s;
+}
+@media all and (max-width: 1024px) {
+  .menu_container {
+    padding: 50px 30px;
+    border-radius: 45px;
+    height: 5rem;
   }
 }
 .menu_card {
@@ -573,22 +702,6 @@ header .logo_ohmyfood {
     font-size: 2.5rem;
   }
 }
-.menu ul {
-  list-style-type: none;
-  padding: 35px 25px;
-  border-radius: 30px;
-  background-color: white;
-  box-shadow: 0px 15px 15px #dbdbdb;
-  margin: 35px 0px;
-  height: 3rem;
-}
-@media all and (max-width: 1024px) {
-  .menu ul {
-    padding: 50px 30px;
-    border-radius: 45px;
-    height: 5rem;
-  }
-}
 .menu button {
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
@@ -600,10 +713,12 @@ header .logo_ohmyfood {
   box-shadow: 0px 15px 25px #DBDBDB;
   margin-top: 4rem;
   margin-bottom: 7rem;
+  cursor: pointer;
 }
 .menu button:hover {
   background: linear-gradient(#fface8, #ae80e5);
   box-shadow: 0px 15px 5px #DBDBDB;
+  transition: 1s;
 }
 @media all and (max-width: 1024px) {
   .menu button {
@@ -616,6 +731,14 @@ header .logo_ohmyfood {
   }
 }
 
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0px;
