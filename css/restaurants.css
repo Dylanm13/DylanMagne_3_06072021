@@ -20,11 +20,6 @@
     padding-bottom: 2rem;
   }
 }
-.restaurants ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
 .restaurants_grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 375px);
@@ -63,69 +58,81 @@
     border-radius: 5px;
   }
 }
-.restaurants_squares {
+.restaurants_container {
   width: 375px;
   background-color: white;
   border-radius: 30px;
   box-shadow: 0px 15px 15px #DBDBDB;
   height: 275px;
 }
-.restaurants_squares:hover {
+.restaurants_container:hover {
   transition: 0.5s;
   transform: scale(1.03);
 }
 @media all and (max-width: 1024px) {
-  .restaurants_squares {
+  .restaurants_container {
     width: 875px;
     height: 610px;
     border-radius: 45px;
   }
 }
-.restaurants_squares--images {
+.restaurants_container--images {
   width: 375px;
   height: 200px;
   border-radius: 30px 30px 0px 0px;
   object-fit: cover;
 }
-.restaurants_squares--images-new {
+.restaurants_container--images-new {
   margin-top: -33px;
 }
 @media all and (max-width: 1024px) {
-  .restaurants_squares--images {
+  .restaurants_container--images {
     width: 875px;
     height: 455px;
     border-radius: 45px 45px 0px 0px;
   }
-  .restaurants_squares--images-new {
+  .restaurants_container--images-new {
     margin-top: -5rem;
   }
 }
-.restaurants_squares--flex {
+.restaurants_container--textheart {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-.restaurants_squares--names {
+.restaurants_container--title {
   margin-left: 1rem;
   margin-top: 0.3rem;
   font-size: 1.2rem;
   font-weight: bold;
 }
 @media all and (max-width: 1024px) {
-  .restaurants_squares--names {
+  .restaurants_container--title {
     margin-left: 2rem;
     margin-top: 1rem;
     font-size: 2.8rem;
   }
 }
-.restaurants_squares--places {
+.restaurants_container--subtitle {
   margin-left: 1rem;
-  margin-top: -1rem;
   font-size: 1.2rem;
 }
 @media all and (max-width: 1024px) {
-  .restaurants_squares--places {
+  .restaurants_container--subtitle {
     margin-left: 2rem;
     margin-top: -0.5rem;
     font-size: 2.5rem;
+  }
+}
+.restaurants_container--animation {
+  font-size: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media all and (max-width: 1024px) {
+  .restaurants_container--animation {
+    font-size: 3.5rem;
+    padding-right: 4.5rem;
   }
 }
 

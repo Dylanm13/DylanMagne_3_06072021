@@ -54,14 +54,30 @@ header {
     }
     &_container {
         list-style-type: none;
-        padding: 35px 25px;
         border-radius: 30px;
         background-color: white;
         box-shadow: 0px 15px 15px #dbdbdb;
         margin: 35px 0px;
-        height: 3rem;
+        height: 7rem;
         cursor: pointer;
         animation: opacity 1s both;
+        &:hover .menu_container-price {
+            padding-right: 7rem;
+            transition: 0.5s ease;
+        }
+        &:hover .validation_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: slide-left 0.5s ease;
+            transform-origin: right;
+        }
+        &:hover .validation_box i {
+            font-size: 45px;
+            color: white;
+            transform: rotate(180deg);
+            animation: rotate 0.5s both;
+        }
             &-1 {
                 animation-delay: 0.1s;
             }
@@ -92,6 +108,72 @@ header {
             &-10 {
                 animation-delay: 1s;
             }
+            &-textprice {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                @media all and (max-width: 1024px) {
+                    margin-top: -2rem;
+                }
+            }
+            &-text {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-left: 25px;
+                margin-top: 25px;
+            }
+            &-title {
+                font-weight: bold;
+                @media all and (max-width: 1024px) {
+                    font-size: 2.5rem;
+                }
+            }
+            &-title p {
+                margin: 0;
+                font-size: 1.5rem;
+                overflow: hidden;
+                @media all and (max-width: 1024px) {
+                    font-size: 2.5rem;
+                }
+            }
+            &-subtitle p {
+                margin-top: 10px;
+                font-size: 1.3rem;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                @media all and (max-width: 1024px) {
+                    font-size: 2.3rem;
+                }
+            }
+            &-price {
+                font-weight: bold;
+                font-size: 1.3rem;
+                margin-right: 25px;
+                @media all and (max-width: 1024px) {
+                    font-size: 2.3rem;
+                }
+            }
+            .validation_box {
+                display: none;
+                position: absolute;
+                background: #99E2D0;
+                border-radius: 0 30px 30px 0;
+                margin-left: 485px;
+                margin-top: -109px;
+                padding: 0 13px;
+                height: 7rem;
+                width: 4rem;
+                @media all and (max-width: 1024px) {
+                    border-radius: 0 45px 45px 0;
+                    margin-left: 760px;
+                    margin-top: -182px;
+                    height: 11.3rem;
+                    width: 7rem;
+                }
+            }
+            
         @media all and (max-width: 1024px) {
             padding: 50px 30px;
             border-radius: 45px;
@@ -107,27 +189,6 @@ header {
         @media all and (max-width: 1024px) {
             grid-template-columns: repeat(1, 925px);
             margin-top: 2rem;
-        }
-        &--platename {
-            font-weight: bold;
-            font-size: 1.5rem;
-            margin-top: -0.5rem;
-            @media all and (max-width: 1024px) {
-                font-size: 2.5rem;
-            }
-        }
-        &--flex {
-            display: flex;
-            justify-content: space-between;
-            font-size: 1.256rem;
-            margin-top: 0.5rem;
-            @media all and (max-width: 1024px) {
-                font-size: 2.29rem;
-            }
-            li:last-child {
-                margin-left: 7rem;
-                font-weight: bold;
-            }
         }
     }
     h2 {
@@ -174,5 +235,23 @@ header {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(-50px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
