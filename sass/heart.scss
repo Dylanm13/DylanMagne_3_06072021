@@ -50,10 +50,12 @@
                 width: 25px;
                 &-2 {
                     width: 56px;
+                    top: 98px;
                 }
                 @media all and (max-width: 1024px) {
                     width: 70px;
                 }
+                &:focus,
                 &:hover {
                     opacity: 1;
                     transition: opacity 0.5s;
@@ -70,6 +72,8 @@
                 position: relative;
                 top: -2px;
                 background-color: white;
+                transition: 1s;
+                &:focus,
                 &:hover {
                 opacity: 0;
                 transition: opacity 0.5s;

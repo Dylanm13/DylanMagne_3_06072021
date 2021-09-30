@@ -61,22 +61,42 @@ header {
         height: 7rem;
         cursor: pointer;
         animation: opacity 1s both;
-        &:hover .menu_container-price {
+            &:hover .menu_container-price {
             padding-right: 7rem;
             transition: 0.5s ease;
         }
-        &:hover .validation_box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        label {
+            cursor: pointer;
+        }
+        input#scales,
+        input#scales-2,
+        input#scales-3,
+        input#scales-4,
+        input#scales-5,
+        input#scales-6,
+        input#scales-7,
+        input#scales-8,
+        input#scales-9,
+        input#scales-10 {
+            display: none;
+            &:checked + .menu_container-textprice > .menu_container-price {
+            padding-right: 7rem;
+            }
+            &:checked ~ .validation_box {
+                opacity: 1;
+            }
+        }
+            &:hover .validation_box {
+            opacity: 1;
             animation: slide-left 0.5s ease;
             transform-origin: right;
         }
-        &:hover .validation_box i {
-            font-size: 45px;
-            color: white;
+            &:hover .validation_box i {
             transform: rotate(180deg);
             animation: rotate 0.5s both;
+            @media all and (max-width: 1024px) {
+                font-size: 65px;
+            }
         }
             &-1 {
                 animation-delay: 0.1s;
@@ -151,12 +171,15 @@ header {
                 font-weight: bold;
                 font-size: 1.3rem;
                 margin-right: 25px;
+                padding-right: 0px;
+                transition: 0.5s ease;
                 @media all and (max-width: 1024px) {
                     font-size: 2.3rem;
                 }
             }
             .validation_box {
-                display: none;
+                display: flex;
+                opacity: 0;
                 position: absolute;
                 background: #99E2D0;
                 border-radius: 0 30px 30px 0;
@@ -165,12 +188,18 @@ header {
                 padding: 0 13px;
                 height: 7rem;
                 width: 4rem;
+                justify-content: center;
+                align-items: center;
                 @media all and (max-width: 1024px) {
                     border-radius: 0 45px 45px 0;
                     margin-left: 760px;
                     margin-top: -182px;
                     height: 11.3rem;
                     width: 7rem;
+                }
+                i {
+                    font-size: 45px;
+                    color: white;
                 }
             }
             
@@ -192,10 +221,20 @@ header {
         }
     }
     h2 {
-        border-bottom: 3px solid $color-tertiary;
         width: fit-content;
         font-weight: 300;
         margin-left: 1rem;
+        position: relative;
+        &::after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background: #99e2d0;
+            position: absolute;
+            z-index: 20;
+            left: 0px;
+            bottom: -8px;
+            }
         @media all and (max-width: 1024px) {
             font-size: 2.5rem;
         }
@@ -212,6 +251,7 @@ header {
         margin-top: 4rem;
         margin-bottom: 7rem;
         cursor: pointer;
+        transition: 1s;
         &:hover
         {
             background: linear-gradient(lighten($color-secondary, 10), lighten($color-primary, 10));
@@ -244,6 +284,15 @@ header {
     }
     100% {
         transform: scaleX(-50px);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: scaleX(-50px);
+    }
+    100% {
+        transform: scaleX(0);
     }
 }
 

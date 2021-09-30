@@ -50,13 +50,14 @@
 }
 .restaurants_squares--animation-heart-2 {
   width: 56px;
+  top: 98px;
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation-heart {
     width: 70px;
   }
 }
-.restaurants_squares--animation-heart:hover {
+.restaurants_squares--animation-heart:focus, .restaurants_squares--animation-heart:hover {
   opacity: 1;
   transition: opacity 0.5s;
   font-size: 1.6rem;
@@ -71,8 +72,9 @@
   position: relative;
   top: -2px;
   background-color: white;
+  transition: 1s;
 }
-.restaurants_squares--animation-heartfill:hover {
+.restaurants_squares--animation-heartfill:focus, .restaurants_squares--animation-heartfill:hover {
   opacity: 0;
   transition: opacity 0.5s;
 }

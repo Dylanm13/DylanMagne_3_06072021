@@ -74,18 +74,58 @@ header .logo_ohmyfood {
   padding-right: 7rem;
   transition: 0.5s ease;
 }
+.menu_container label {
+  cursor: pointer;
+}
+.menu_container input#scales,
+.menu_container input#scales-2,
+.menu_container input#scales-3,
+.menu_container input#scales-4,
+.menu_container input#scales-5,
+.menu_container input#scales-6,
+.menu_container input#scales-7,
+.menu_container input#scales-8,
+.menu_container input#scales-9,
+.menu_container input#scales-10 {
+  display: none;
+}
+.menu_container input#scales:checked + .menu_container-textprice > .menu_container-price,
+.menu_container input#scales-2:checked + .menu_container-textprice > .menu_container-price,
+.menu_container input#scales-3:checked + .menu_container-textprice > .menu_container-price,
+.menu_container input#scales-4:checked + .menu_container-textprice > .menu_container-price,
+.menu_container input#scales-5:checked + .menu_container-textprice > .menu_container-price,
+.menu_container input#scales-6:checked + .menu_container-textprice > .menu_container-price,
+.menu_container input#scales-7:checked + .menu_container-textprice > .menu_container-price,
+.menu_container input#scales-8:checked + .menu_container-textprice > .menu_container-price,
+.menu_container input#scales-9:checked + .menu_container-textprice > .menu_container-price,
+.menu_container input#scales-10:checked + .menu_container-textprice > .menu_container-price {
+  padding-right: 7rem;
+}
+.menu_container input#scales:checked ~ .validation_box,
+.menu_container input#scales-2:checked ~ .validation_box,
+.menu_container input#scales-3:checked ~ .validation_box,
+.menu_container input#scales-4:checked ~ .validation_box,
+.menu_container input#scales-5:checked ~ .validation_box,
+.menu_container input#scales-6:checked ~ .validation_box,
+.menu_container input#scales-7:checked ~ .validation_box,
+.menu_container input#scales-8:checked ~ .validation_box,
+.menu_container input#scales-9:checked ~ .validation_box,
+.menu_container input#scales-10:checked ~ .validation_box {
+  opacity: 1;
+}
 .menu_container:hover .validation_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  opacity: 1;
   animation: slide-left 0.5s ease;
   transform-origin: right;
 }
 .menu_container:hover .validation_box i {
-  font-size: 45px;
-  color: white;
   transform: rotate(180deg);
   animation: rotate 0.5s both;
+}
+@media all and (max-width: 1024px) {
+  .menu_container:hover .validation_box i {
+    font-size: 65px;
+  }
 }
 .menu_container-1 {
   animation-delay: 0.1s;
@@ -168,6 +208,8 @@ header .logo_ohmyfood {
   font-weight: bold;
   font-size: 1.3rem;
   margin-right: 25px;
+  padding-right: 0px;
+  transition: 0.5s ease;
 }
 @media all and (max-width: 1024px) {
   .menu_container-price {
@@ -175,7 +217,8 @@ header .logo_ohmyfood {
   }
 }
 .menu_container .validation_box {
-  display: none;
+  display: flex;
+  opacity: 0;
   position: absolute;
   background: #99E2D0;
   border-radius: 0 30px 30px 0;
@@ -184,6 +227,8 @@ header .logo_ohmyfood {
   padding: 0 13px;
   height: 7rem;
   width: 4rem;
+  justify-content: center;
+  align-items: center;
 }
 @media all and (max-width: 1024px) {
   .menu_container .validation_box {
@@ -193,6 +238,10 @@ header .logo_ohmyfood {
     height: 11.3rem;
     width: 7rem;
   }
+}
+.menu_container .validation_box i {
+  font-size: 45px;
+  color: white;
 }
 @media all and (max-width: 1024px) {
   .menu_container {
@@ -215,10 +264,20 @@ header .logo_ohmyfood {
   }
 }
 .menu h2 {
-  border-bottom: 3px solid #99E2D0;
   width: fit-content;
   font-weight: 300;
   margin-left: 1rem;
+  position: relative;
+}
+.menu h2::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #99e2d0;
+  position: absolute;
+  z-index: 20;
+  left: 0px;
+  bottom: -8px;
 }
 @media all and (max-width: 1024px) {
   .menu h2 {
@@ -237,6 +296,7 @@ header .logo_ohmyfood {
   margin-top: 4rem;
   margin-bottom: 7rem;
   cursor: pointer;
+  transition: 1s;
 }
 .menu button:hover {
   background: linear-gradient(#fface8, #ae80e5);
@@ -268,6 +328,14 @@ header .logo_ohmyfood {
   }
   100% {
     transform: scaleX(-50px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: scaleX(-50px);
+  }
+  100% {
+    transform: scaleX(0);
   }
 }
 @keyframes rotate {
