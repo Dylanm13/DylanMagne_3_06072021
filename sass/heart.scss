@@ -1,7 +1,8 @@
 @import "colors.scss";
 
 .restaurants {
-    &_squares {
+    &_squares,
+    &_container {
         &--animation {
             margin-left: 9rem;
             font-size: 1.5rem;
@@ -41,7 +42,7 @@
                     height: 75px;
                 }
             }
-            &-heart{
+            &-heart {
                 position: absolute;
                 font-weight: 600;
                 background: -webkit-linear-gradient($color-secondary, $color-primary);
@@ -55,7 +56,6 @@
                 @media all and (max-width: 1024px) {
                     width: 70px;
                 }
-                &:focus,
                 &:hover {
                     opacity: 1;
                     transition: opacity 0.5s;
@@ -89,6 +89,18 @@
                     background-color: $color-quadra;     
                 }
             }
+        input#heart,
+        input#heart-2,
+        input#heart-3,
+        input#heart-4 {
+            display: none;
+            &:checked > .restaurants_squares--animation-heart {
+                opacity: 1;
+            }
+            &:checked ~ .restaurants_squares--animation-heartfill {
+                opacity: 0;
+            }
+        }
         }
     }
 }

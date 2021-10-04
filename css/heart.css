@@ -1,38 +1,38 @@
-.restaurants_squares--animation {
+.restaurants_squares--animation, .restaurants_container--animation {
   margin-left: 9rem;
   font-size: 1.5rem;
   margin-top: 20px;
 }
-.restaurants_squares--animation-1 {
+.restaurants_squares--animation-1, .restaurants_container--animation-1 {
   margin-left: 11rem;
 }
-.restaurants_squares--animation-2 {
+.restaurants_squares--animation-2, .restaurants_container--animation-2 {
   margin-left: 11rem;
   font-size: 3.5rem;
   margin-top: 6rem;
 }
-.restaurants_squares--animation-3 {
+.restaurants_squares--animation-3, .restaurants_container--animation-3 {
   margin-left: 11rem;
   font-size: 3.5rem;
   margin-top: 6rem;
 }
 @media all and (max-width: 1024px) {
-  .restaurants_squares--animation {
+  .restaurants_squares--animation, .restaurants_container--animation {
     margin-left: 22rem;
     margin-top: 20px;
     font-size: 3.5rem;
   }
-  .restaurants_squares--animation-1 {
+  .restaurants_squares--animation-1, .restaurants_container--animation-1 {
     margin-left: 28rem;
   }
-  .restaurants_squares--animation-2 {
+  .restaurants_squares--animation-2, .restaurants_container--animation-2 {
     margin-left: 7rem;
     margin-top: 6rem;
     font-size: 4.5rem;
     width: 80px;
     height: 75px;
   }
-  .restaurants_squares--animation-3 {
+  .restaurants_squares--animation-3, .restaurants_container--animation-3 {
     margin-left: 16rem;
     margin-top: 6rem;
     font-size: 4.5rem;
@@ -40,7 +40,7 @@
     height: 75px;
   }
 }
-.restaurants_squares--animation-heart {
+.restaurants_squares--animation-heart, .restaurants_container--animation-heart {
   position: absolute;
   font-weight: 600;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
@@ -48,47 +48,74 @@
   -webkit-background-clip: text;
   width: 25px;
 }
-.restaurants_squares--animation-heart-2 {
+.restaurants_squares--animation-heart-2, .restaurants_container--animation-heart-2 {
   width: 56px;
   top: 98px;
 }
 @media all and (max-width: 1024px) {
-  .restaurants_squares--animation-heart {
+  .restaurants_squares--animation-heart, .restaurants_container--animation-heart {
     width: 70px;
   }
 }
-.restaurants_squares--animation-heart:focus, .restaurants_squares--animation-heart:hover {
+.restaurants_squares--animation-heart:hover, .restaurants_container--animation-heart:hover {
   opacity: 1;
   transition: opacity 0.5s;
   font-size: 1.6rem;
 }
 @media all and (max-width: 1024px) {
-  .restaurants_squares--animation-heart-2 {
+  .restaurants_squares--animation-heart-2, .restaurants_container--animation-heart-2 {
     width: 80px;
   }
 }
-.restaurants_squares--animation-heartfill {
+.restaurants_squares--animation-heartfill, .restaurants_container--animation-heartfill {
   cursor: pointer;
   position: relative;
   top: -2px;
   background-color: white;
   transition: 1s;
 }
-.restaurants_squares--animation-heartfill:focus, .restaurants_squares--animation-heartfill:hover {
+.restaurants_squares--animation-heartfill:focus, .restaurants_squares--animation-heartfill:hover, .restaurants_container--animation-heartfill:focus, .restaurants_container--animation-heartfill:hover {
   opacity: 0;
   transition: opacity 0.5s;
 }
 @media all and (max-width: 1024px) {
-  .restaurants_squares--animation-heartfill {
+  .restaurants_squares--animation-heartfill, .restaurants_container--animation-heartfill {
     width: 70px;
     height: 65px;
   }
-  .restaurants_squares--animation-heartfill-1 {
+  .restaurants_squares--animation-heartfill-1, .restaurants_container--animation-heartfill-1 {
     width: 80px;
   }
 }
-.restaurants_squares--animation-heartfill-1 {
+.restaurants_squares--animation-heartfill-1, .restaurants_container--animation-heartfill-1 {
   background-color: #F6F6F6;
+}
+.restaurants_squares--animation input#heart,
+.restaurants_squares--animation input#heart-2,
+.restaurants_squares--animation input#heart-3,
+.restaurants_squares--animation input#heart-4, .restaurants_container--animation input#heart,
+.restaurants_container--animation input#heart-2,
+.restaurants_container--animation input#heart-3,
+.restaurants_container--animation input#heart-4 {
+  display: none;
+}
+.restaurants_squares--animation input#heart:checked > .restaurants_squares--animation-heart,
+.restaurants_squares--animation input#heart-2:checked > .restaurants_squares--animation-heart,
+.restaurants_squares--animation input#heart-3:checked > .restaurants_squares--animation-heart,
+.restaurants_squares--animation input#heart-4:checked > .restaurants_squares--animation-heart, .restaurants_container--animation input#heart:checked > .restaurants_squares--animation-heart,
+.restaurants_container--animation input#heart-2:checked > .restaurants_squares--animation-heart,
+.restaurants_container--animation input#heart-3:checked > .restaurants_squares--animation-heart,
+.restaurants_container--animation input#heart-4:checked > .restaurants_squares--animation-heart {
+  opacity: 1;
+}
+.restaurants_squares--animation input#heart:checked ~ .restaurants_squares--animation-heartfill,
+.restaurants_squares--animation input#heart-2:checked ~ .restaurants_squares--animation-heartfill,
+.restaurants_squares--animation input#heart-3:checked ~ .restaurants_squares--animation-heartfill,
+.restaurants_squares--animation input#heart-4:checked ~ .restaurants_squares--animation-heartfill, .restaurants_container--animation input#heart:checked ~ .restaurants_squares--animation-heartfill,
+.restaurants_container--animation input#heart-2:checked ~ .restaurants_squares--animation-heartfill,
+.restaurants_container--animation input#heart-3:checked ~ .restaurants_squares--animation-heartfill,
+.restaurants_container--animation input#heart-4:checked ~ .restaurants_squares--animation-heartfill {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=heart.css.map */
