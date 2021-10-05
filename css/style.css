@@ -391,7 +391,7 @@ header img {
 @media all and (max-width: 1024px) {
   .restaurants_container--subtitle {
     margin-left: 2rem;
-    margin-top: -0.5rem;
+    margin-top: 0.5rem;
     font-size: 2.5rem;
   }
 }
@@ -426,7 +426,6 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation, .restaurants_container--animation {
-    margin-left: 22rem;
     margin-top: 20px;
     font-size: 3.5rem;
   }
@@ -498,31 +497,13 @@ header img {
 .restaurants_squares--animation-heartfill-1, .restaurants_container--animation-heartfill-1 {
   background-color: #F6F6F6;
 }
-.restaurants_squares--animation input#heart,
-.restaurants_squares--animation input#heart-2,
-.restaurants_squares--animation input#heart-3,
-.restaurants_squares--animation input#heart-4, .restaurants_container--animation input#heart,
-.restaurants_container--animation input#heart-2,
-.restaurants_container--animation input#heart-3,
-.restaurants_container--animation input#heart-4 {
+.restaurants_squares--animation [id^=heart], .restaurants_container--animation [id^=heart] {
   display: none;
 }
-.restaurants_squares--animation input#heart:checked > .restaurants_squares--animation-heart,
-.restaurants_squares--animation input#heart-2:checked > .restaurants_squares--animation-heart,
-.restaurants_squares--animation input#heart-3:checked > .restaurants_squares--animation-heart,
-.restaurants_squares--animation input#heart-4:checked > .restaurants_squares--animation-heart, .restaurants_container--animation input#heart:checked > .restaurants_squares--animation-heart,
-.restaurants_container--animation input#heart-2:checked > .restaurants_squares--animation-heart,
-.restaurants_container--animation input#heart-3:checked > .restaurants_squares--animation-heart,
-.restaurants_container--animation input#heart-4:checked > .restaurants_squares--animation-heart {
+.restaurants_squares--animation [id^=heart]:checked > .restaurants_squares--animation-heart, .restaurants_container--animation [id^=heart]:checked > .restaurants_squares--animation-heart {
   opacity: 1;
 }
-.restaurants_squares--animation input#heart:checked ~ .restaurants_squares--animation-heartfill,
-.restaurants_squares--animation input#heart-2:checked ~ .restaurants_squares--animation-heartfill,
-.restaurants_squares--animation input#heart-3:checked ~ .restaurants_squares--animation-heartfill,
-.restaurants_squares--animation input#heart-4:checked ~ .restaurants_squares--animation-heartfill, .restaurants_container--animation input#heart:checked ~ .restaurants_squares--animation-heartfill,
-.restaurants_container--animation input#heart-2:checked ~ .restaurants_squares--animation-heartfill,
-.restaurants_container--animation input#heart-3:checked ~ .restaurants_squares--animation-heartfill,
-.restaurants_container--animation input#heart-4:checked ~ .restaurants_squares--animation-heartfill {
+.restaurants_squares--animation [id^=heart]:checked ~ .restaurants_squares--animation-heartfill, .restaurants_container--animation [id^=heart]:checked ~ .restaurants_squares--animation-heartfill {
   opacity: 0;
 }
 
@@ -681,41 +662,16 @@ header .logo_ohmyfood {
 .menu_container label {
   cursor: pointer;
 }
-.menu_container input#scales,
-.menu_container input#scales-2,
-.menu_container input#scales-3,
-.menu_container input#scales-4,
-.menu_container input#scales-5,
-.menu_container input#scales-6,
-.menu_container input#scales-7,
-.menu_container input#scales-8,
-.menu_container input#scales-9,
-.menu_container input#scales-10 {
+.menu_container [id^=scales] {
   display: none;
 }
-.menu_container input#scales:checked + .menu_container-textprice > .menu_container-price,
-.menu_container input#scales-2:checked + .menu_container-textprice > .menu_container-price,
-.menu_container input#scales-3:checked + .menu_container-textprice > .menu_container-price,
-.menu_container input#scales-4:checked + .menu_container-textprice > .menu_container-price,
-.menu_container input#scales-5:checked + .menu_container-textprice > .menu_container-price,
-.menu_container input#scales-6:checked + .menu_container-textprice > .menu_container-price,
-.menu_container input#scales-7:checked + .menu_container-textprice > .menu_container-price,
-.menu_container input#scales-8:checked + .menu_container-textprice > .menu_container-price,
-.menu_container input#scales-9:checked + .menu_container-textprice > .menu_container-price,
-.menu_container input#scales-10:checked + .menu_container-textprice > .menu_container-price {
+.menu_container [id^=scales]:checked + .menu_container-textprice > .menu_container-price {
   padding-right: 7rem;
 }
-.menu_container input#scales:checked ~ .validation_box,
-.menu_container input#scales-2:checked ~ .validation_box,
-.menu_container input#scales-3:checked ~ .validation_box,
-.menu_container input#scales-4:checked ~ .validation_box,
-.menu_container input#scales-5:checked ~ .validation_box,
-.menu_container input#scales-6:checked ~ .validation_box,
-.menu_container input#scales-7:checked ~ .validation_box,
-.menu_container input#scales-8:checked ~ .validation_box,
-.menu_container input#scales-9:checked ~ .validation_box,
-.menu_container input#scales-10:checked ~ .validation_box {
+.menu_container [id^=scales]:checked ~ .validation_box {
   opacity: 1;
+  background: #00ac81;
+  transition: 0.7s;
 }
 .menu_container:hover .validation_box {
   opacity: 1;
@@ -882,6 +838,11 @@ header .logo_ohmyfood {
   z-index: 20;
   left: 0px;
   bottom: -8px;
+}
+@media all and (max-width: 1024px) {
+  .menu h2::after {
+    width: 70px;
+  }
 }
 @media all and (max-width: 1024px) {
   .menu h2 {

@@ -18,7 +18,6 @@
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation, .restaurants_container--animation {
-    margin-left: 22rem;
     margin-top: 20px;
     font-size: 3.5rem;
   }
@@ -90,31 +89,13 @@
 .restaurants_squares--animation-heartfill-1, .restaurants_container--animation-heartfill-1 {
   background-color: #F6F6F6;
 }
-.restaurants_squares--animation input#heart,
-.restaurants_squares--animation input#heart-2,
-.restaurants_squares--animation input#heart-3,
-.restaurants_squares--animation input#heart-4, .restaurants_container--animation input#heart,
-.restaurants_container--animation input#heart-2,
-.restaurants_container--animation input#heart-3,
-.restaurants_container--animation input#heart-4 {
+.restaurants_squares--animation [id^=heart], .restaurants_container--animation [id^=heart] {
   display: none;
 }
-.restaurants_squares--animation input#heart:checked > .restaurants_squares--animation-heart,
-.restaurants_squares--animation input#heart-2:checked > .restaurants_squares--animation-heart,
-.restaurants_squares--animation input#heart-3:checked > .restaurants_squares--animation-heart,
-.restaurants_squares--animation input#heart-4:checked > .restaurants_squares--animation-heart, .restaurants_container--animation input#heart:checked > .restaurants_squares--animation-heart,
-.restaurants_container--animation input#heart-2:checked > .restaurants_squares--animation-heart,
-.restaurants_container--animation input#heart-3:checked > .restaurants_squares--animation-heart,
-.restaurants_container--animation input#heart-4:checked > .restaurants_squares--animation-heart {
+.restaurants_squares--animation [id^=heart]:checked > .restaurants_squares--animation-heart, .restaurants_container--animation [id^=heart]:checked > .restaurants_squares--animation-heart {
   opacity: 1;
 }
-.restaurants_squares--animation input#heart:checked ~ .restaurants_squares--animation-heartfill,
-.restaurants_squares--animation input#heart-2:checked ~ .restaurants_squares--animation-heartfill,
-.restaurants_squares--animation input#heart-3:checked ~ .restaurants_squares--animation-heartfill,
-.restaurants_squares--animation input#heart-4:checked ~ .restaurants_squares--animation-heartfill, .restaurants_container--animation input#heart:checked ~ .restaurants_squares--animation-heartfill,
-.restaurants_container--animation input#heart-2:checked ~ .restaurants_squares--animation-heartfill,
-.restaurants_container--animation input#heart-3:checked ~ .restaurants_squares--animation-heartfill,
-.restaurants_container--animation input#heart-4:checked ~ .restaurants_squares--animation-heartfill {
+.restaurants_squares--animation [id^=heart]:checked ~ .restaurants_squares--animation-heartfill, .restaurants_container--animation [id^=heart]:checked ~ .restaurants_squares--animation-heartfill {
   opacity: 0;
 }
 

@@ -21,7 +21,6 @@
                 margin-top: 6rem;
             }
             @media all and (max-width: 1024px) {
-                margin-left: 22rem;
                 margin-top: 20px;
                 font-size: 3.5rem;
                 &-1 {
@@ -89,10 +88,7 @@
                     background-color: $color-quadra;     
                 }
             }
-        input#heart,
-        input#heart-2,
-        input#heart-3,
-        input#heart-4 {
+            [id^="heart"] {
             display: none;
             &:checked > .restaurants_squares--animation-heart {
                 opacity: 1;
