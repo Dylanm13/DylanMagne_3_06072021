@@ -9,7 +9,6 @@
 
 @mixin squares_text-bot {
     margin-left: 1rem;
-    margin-top: -1rem;
     font-size: 1.2rem;
 }
 
@@ -20,26 +19,23 @@
     margin-top: 3rem;
     padding-bottom: 9rem;
     h2 {
-        font-size: 2rem;
+        font-size: 3rem;
         text-align: center;
-        padding-top: 4rem;
-        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 4rem;
         @media all and (max-width: 1024px) {
             font-size: 3rem;
             text-align: left;
             margin-left: 3rem;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
         }
-    }
-    ul {
-        list-style-type: none;
-        padding: 0px;
-        margin: 0px;
     }
     &_grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 300px);
-        grid-gap: 11.5rem;
-        margin-left: 5rem;
+        grid-template-columns: repeat(auto-fill, 375px);
+        grid-gap: 6.5rem;
+        justify-content: center;
         @media all and (max-width: 1024px) {
             grid-template-columns: repeat(1, 875px);
             grid-gap: 2.5rem;
@@ -54,6 +50,12 @@
         margin: 0px;
         background-color: #99E2D0;
         color: #008766;
+        left: 16rem;
+        top: 1.5rem;
+        font-size: 1rem;
+        padding: 7px 19px;
+        font-weight: bold;
+        border-radius: 5px;
         @media all and (max-width: 1024px) {
         left: 39rem;
         top: 2rem;
@@ -63,33 +65,46 @@
         border-radius: 5px;
         }
     }
-    &_squares {
-        width: 300px;
+    &_container {
+        width: 375px;
         background-color: white;
-        border-radius: 45px;
-        box-shadow: 2px 2px 5px grey;
-        height: 200px;
+        border-radius: 30px;
+        box-shadow: 0px 15px 15px $shadow-color;
+        height: 275px;
+        transition: 1s;
+            &:hover {
+                transition: 0.5s;
+                transform: scale(1.03);
+            }
         @media all and (max-width: 1024px) {
             width: 875px;
             height: 610px;
+            border-radius: 45px;
         }
         &--images {
-            width: 300px;
-            height: 135px;
-            border-radius: 45px 45px 0px 0px;
+            width: 375px;
+            height: 200px;
+            border-radius: 30px 30px 0px 0px;
             object-fit: cover;
+                &-new {
+                    margin-top: -33px;
+                }
             @media all and (max-width: 1024px) {
                 width: 875px;
                 height: 455px;
+                border-radius: 45px 45px 0px 0px;
                 &-new {
                     margin-top: -5rem;
                 }
             }
         }
-        &--flex {
-            display: flex
+        &--textheart {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
         }
-        &--names {
+        &--title {
             @include squares_text-top;
             @media all and (max-width: 1024px) {
                 margin-left: 2rem;
@@ -97,34 +112,23 @@
                 font-size: 2.8rem;
             }
         }
-        &--places {
+        &--subtitle {
             @include squares_text-bot;
             @media all and (max-width: 1024px) {
                 margin-left: 2rem;
-                margin-top: -0.5rem;
+                margin-top: 0.5rem;
                 font-size: 2.5rem;
             }
         }
-        &--heart {
-            margin-left: 15rem;
+        &--animation {
             font-size: 1.5rem;
-            margin-top: -25px;
-            &:hover,
-            &:active {
-                background: -webkit-linear-gradient(#FF79DA, #9356DC);
-                color: transparent;
-                -webkit-background-clip: text;
-                font-weight: 600;
-            }
+            padding-right: 1.5rem;
             @media all and (max-width: 1024px) {
-                margin-left: 22rem;
-                margin-top: 20px;
                 font-size: 3.5rem;
-                &-1 {
-                    margin-left: 28rem;
-                }
+                padding-right: 4.5rem;
             }
         }
     }
 }
     
+

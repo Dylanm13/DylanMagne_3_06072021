@@ -3,7 +3,11 @@
 footer {
     background-color: $color-sexta;
     color: white;
-    padding: 4rem 0rem;
+    padding: 6rem 0rem;
+    text-align: center;
+    @media all and (max-width: 1024px) {
+        text-align: inherit;
+    }
     h2 {
         font-size: 2rem;
         text-align: center;
@@ -11,29 +15,53 @@ footer {
         font-family: "Shrikhand";
         font-weight: 200;
         @media all and (max-width: 1024px) {
-            font-size: 2.5rem;
-            margin-left: 3rem;
+            font-size: 3rem;
+            margin-left: 6rem;
             text-align: left;
+            height: 70px;
         }
     }
     ul {
         list-style-type: none;
-        padding: 0px;
+        padding-top: 5rem;
         margin: 0px;
         display: grid;
         grid-template-columns: repeat(auto-fill, 390px);
         grid-gap: 2rem;
-        margin-left: 7rem;
         font-size: 1.5rem;
-        margin-top: 3rem;
+        justify-content: center;
         @media all and (max-width: 1024px) {
-            grid-template-columns: repeat(1, 560px);
-            grid-gap: 1rem;
+            grid-template-columns: repeat(1, 660px);
+            grid-gap: 1.2rem;
             margin-left: 3rem;
+            justify-content: inherit;
+            font-size: 3rem;
+            padding-top: 3rem;
+            height: 15rem;
+            padding-bottom: 3rem;
         }
         i {
-            margin-right: 2.5rem;
-            font-size: 0.8rem;
+            margin-right: 1.5rem;
+            font-size: 1.5rem;
+            @media all and (max-width: 1024px) {
+                margin-right: 2.5rem;
+                font-size: 2rem;
+            }
+        }
+        li {
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover {
+                font-size: 1.7rem;
+                transition: 0.5s;
+                @media all and (max-width:1024px) {
+                    font-size: 3.2rem;
+                }
+            }
+        }
+        a {
+            text-decoration: none;
+            color: white;
         }
     }
 }
