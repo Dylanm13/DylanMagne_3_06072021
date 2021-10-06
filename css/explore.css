@@ -31,6 +31,13 @@
   height: 5rem;
   padding: 0px 35px;
   box-shadow: 0px 15px 25px #DBDBDB;
+  cursor: pointer;
+  transition: 1s;
+}
+.explore_button:hover {
+  background: linear-gradient(#fface8, #ae80e5);
+  box-shadow: 0px 15px 5px #DBDBDB;
+  transition: 1s;
 }
 @media all and (max-width: 1024px) {
   .explore_button {
