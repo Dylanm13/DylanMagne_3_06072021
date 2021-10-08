@@ -1,0 +1,110 @@
+.function {
+  padding: 7rem 0rem;
+}
+@media all and (min-width: 1024px) {
+  .function {
+    padding: 4rem 0rem;
+  }
+}
+.function h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+@media all and (max-width: 1024px) {
+  .function h2 {
+    font-size: 4rem;
+    text-align: left;
+    margin-left: 3rem;
+  }
+}
+.function ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 570px);
+  grid-gap: 5rem;
+  justify-content: center;
+  padding: 0px;
+}
+@media all and (max-width: 1024px) {
+  .function ul {
+    grid-template-columns: repeat(1, 850px);
+    padding: 0px;
+  }
+}
+.function_buttons {
+  display: flex;
+  font-size: 2rem;
+  box-shadow: 10px 15px 60px #DBDBDB;
+  background-color: #F6F6F6;
+  border-radius: 50px;
+  margin-left: 2rem;
+  height: 11rem;
+  cursor: pointer;
+  transition: 1s;
+}
+@media all and (min-width: 1024px) {
+  .function_buttons {
+    height: 8rem;
+  }
+}
+.function_buttons:hover, .function_buttons:active {
+  background-color: #F5EDFF;
+  box-shadow: 10px 15px 20px #DBDBDB;
+  transition: 1s;
+}
+.function_buttons:hover .function_icon, .function_buttons:active .function_icon {
+  color: #9356DC;
+  transition: 1s;
+}
+@media all and (max-width: 1024px) {
+  .function_buttons {
+    font-size: 3rem;
+    margin-left: 0px;
+  }
+}
+.function_numbers {
+  border: 1px solid #9356DC;
+  border-radius: 40px;
+  color: white;
+  background-color: #9356DC;
+  text-align: center;
+  width: 40px;
+  height: 35px;
+  margin-left: -1.5rem;
+  margin-top: 3.5rem;
+  padding-top: 5px;
+  font-size: 1.5rem;
+}
+@media all and (min-width: 1024px) {
+  .function_numbers {
+    margin-top: 2.5rem;
+  }
+}
+@media all and (max-width: 1024px) {
+  .function_numbers {
+    width: 60px;
+    height: 55px;
+    padding-top: 5px;
+    font-size: 2.5rem;
+  }
+}
+.function_icon {
+  padding: 2.7rem 3rem;
+  color: grey;
+}
+@media all and (max-width: 1024px) {
+  .function_icon {
+    padding: 3.8rem 3rem;
+  }
+}
+.function_names {
+  font-weight: bold;
+  margin-top: 2.5rem;
+}
+@media all and (max-width: 1024px) {
+  .function_names {
+    margin-top: 3.5rem;
+  }
+}
+
+/*# sourceMappingURL=function_BACKUP_910.css.map */

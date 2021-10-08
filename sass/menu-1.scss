@@ -61,16 +61,22 @@ header {
         height: 7rem;
         cursor: pointer;
         animation: opacity 1s both;
-            &:hover .menu_container-price {
+            &:hover,
+            &:active
+            .menu_container-price {
             padding-right: 7rem;
             transition: 0.5s ease;
         }
-            &:hover .validation_box {
+            &:hover,
+            &:active
+            .validation_box {
             opacity: 1;
             animation: slide-left 0.5s ease;
             transform-origin: right;
         }
-            &:hover .validation_box i {
+            &:hover,
+            &:active
+            .validation_box i {
             transform: rotate(180deg);
             animation: rotate 0.5s both;
             @media all and (max-width: 1024px) {
