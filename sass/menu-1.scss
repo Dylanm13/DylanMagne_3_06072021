@@ -65,21 +65,6 @@ header {
             padding-right: 7rem;
             transition: 0.5s ease;
         }
-        label {
-            cursor: pointer;
-        }
-        
-        [id^="scales"] {
-            display: none;
-            &:checked + .menu_container-textprice > .menu_container-price {
-            padding-right: 7rem;
-            }
-            &:checked ~ .validation_box {
-                opacity: 1;
-                background: $validation-box-active;
-                transition: 0.7s;
-            }
-        }
             &:hover .validation_box {
             opacity: 1;
             animation: slide-left 0.5s ease;
@@ -281,15 +266,6 @@ header {
     }
     100% {
         transform: scaleX(-50px);
-    }
-}
-
-@keyframes slide-right {
-    0% {
-        transform: scaleX(-50px);
-    }
-    100% {
-        transform: scaleX(0);
     }
 }
 
