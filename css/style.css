@@ -655,21 +655,21 @@ header .logo_ohmyfood {
   cursor: pointer;
   animation: opacity 1s both;
 }
-.menu_container:hover, .menu_container:active .menu_container-price {
+.menu_container:hover .menu_container-price {
   padding-right: 7rem;
   transition: 0.5s ease;
 }
-.menu_container:hover, .menu_container:active .validation_box {
+.menu_container:hover .validation_box {
   opacity: 1;
   animation: slide-left 0.5s ease;
   transform-origin: right;
 }
-.menu_container:hover, .menu_container:active .validation_box i {
+.menu_container:hover .validation_box i {
   transform: rotate(180deg);
   animation: rotate 0.5s both;
 }
 @media all and (max-width: 1024px) {
-  .menu_container:hover, .menu_container:active .validation_box i {
+  .menu_container:hover .validation_box i {
     font-size: 65px;
   }
 }
