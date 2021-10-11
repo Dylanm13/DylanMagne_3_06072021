@@ -306,7 +306,7 @@ header img {
 .restaurants_new {
   z-index: 1;
   position: relative;
-  width: fit-content;
+  width: max-content;
   margin: 0px;
   background-color: #99E2D0;
   color: #008766;
@@ -605,7 +605,7 @@ header .logo_ohmyfood {
 }
 
 .image_restaurant {
-  width: -webkit-fill-available;
+  width: 100%;
   height: 40rem;
   object-fit: cover;
 }
