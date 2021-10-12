@@ -1,19 +1,23 @@
 .restaurants_squares--animation, .restaurants_container--animation {
   font-size: 1.5rem;
-  margin-top: 20px;
+  margin-top: 61px;
 }
 .restaurants_squares--animation-1, .restaurants_container--animation-1 {
   margin-left: 11rem;
 }
 .restaurants_squares--animation-2, .restaurants_container--animation-2 {
-  margin-left: 11rem;
-  font-size: 3.5rem;
-  margin-top: 6rem;
+  margin-left: 3rem;
+  font-size: 2rem;
+  width: 35px;
+  height: 35px;
 }
 .restaurants_squares--animation-3, .restaurants_container--animation-3 {
   margin-left: 11rem;
-  font-size: 3.5rem;
-  margin-top: 6rem;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+.restaurants_squares--animation-4, .restaurants_container--animation-4 {
+  margin-top: 25px;
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation, .restaurants_container--animation {
@@ -24,18 +28,18 @@
     margin-left: 28rem;
   }
   .restaurants_squares--animation-2, .restaurants_container--animation-2 {
-    margin-left: 7rem;
-    margin-top: 6rem;
-    font-size: 4.5rem;
-    width: 80px;
-    height: 75px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    width: 35px;
+    height: 35px;
   }
   .restaurants_squares--animation-3, .restaurants_container--animation-3 {
-    margin-left: 16rem;
-    margin-top: 6rem;
-    font-size: 4.5rem;
-    width: 80px;
-    height: 75px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    width: 35px;
+    height: 35px;
   }
 }
 .restaurants_squares--animation-heart, .restaurants_container--animation-heart {
@@ -47,12 +51,13 @@
   width: 25px;
 }
 .restaurants_squares--animation-heart-2, .restaurants_container--animation-heart-2 {
-  width: 56px;
-  top: 98px;
+  width: 35px;
+  top: 62px;
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation-heart, .restaurants_container--animation-heart {
-    width: 25px;
+    width: 35px;
+    top: 50px;
   }
 }
 .restaurants_squares--animation-heart:hover, .restaurants_container--animation-heart:hover {
@@ -62,7 +67,12 @@
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation-heart-2, .restaurants_container--animation-heart-2 {
-    width: 80px;
+    width: 35px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .restaurants_squares--animation-heart-4, .restaurants_container--animation-heart-4 {
+    top: 184px;
   }
 }
 .restaurants_squares--animation-heartfill, .restaurants_container--animation-heartfill {
@@ -71,6 +81,7 @@
   top: -2px;
   background-color: white;
   transition: 1s;
+  width: 36px;
 }
 .restaurants_squares--animation-heartfill:focus, .restaurants_squares--animation-heartfill:hover, .restaurants_container--animation-heartfill:focus, .restaurants_container--animation-heartfill:hover {
   opacity: 0;
@@ -79,10 +90,10 @@
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation-heartfill, .restaurants_container--animation-heartfill {
     width: 25px;
-    height: 25px;
+    height: 33px;
   }
   .restaurants_squares--animation-heartfill-1, .restaurants_container--animation-heartfill-1 {
-    width: 80px;
+    width: 35px;
   }
 }
 .restaurants_squares--animation-heartfill-1, .restaurants_container--animation-heartfill-1 {

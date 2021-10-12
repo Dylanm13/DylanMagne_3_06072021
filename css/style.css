@@ -397,20 +397,24 @@ header img {
 
 .restaurants_squares--animation, .restaurants_container--animation {
   font-size: 1.5rem;
-  margin-top: 20px;
+  margin-top: 61px;
 }
 .restaurants_squares--animation-1, .restaurants_container--animation-1 {
   margin-left: 11rem;
 }
 .restaurants_squares--animation-2, .restaurants_container--animation-2 {
-  margin-left: 11rem;
-  font-size: 3.5rem;
-  margin-top: 6rem;
+  margin-left: 3rem;
+  font-size: 2rem;
+  width: 35px;
+  height: 35px;
 }
 .restaurants_squares--animation-3, .restaurants_container--animation-3 {
   margin-left: 11rem;
-  font-size: 3.5rem;
-  margin-top: 6rem;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+.restaurants_squares--animation-4, .restaurants_container--animation-4 {
+  margin-top: 25px;
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation, .restaurants_container--animation {
@@ -421,18 +425,18 @@ header img {
     margin-left: 28rem;
   }
   .restaurants_squares--animation-2, .restaurants_container--animation-2 {
-    margin-left: 7rem;
-    margin-top: 6rem;
-    font-size: 4.5rem;
-    width: 80px;
-    height: 75px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    width: 35px;
+    height: 35px;
   }
   .restaurants_squares--animation-3, .restaurants_container--animation-3 {
-    margin-left: 16rem;
-    margin-top: 6rem;
-    font-size: 4.5rem;
-    width: 80px;
-    height: 75px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    width: 35px;
+    height: 35px;
   }
 }
 .restaurants_squares--animation-heart, .restaurants_container--animation-heart {
@@ -444,12 +448,13 @@ header img {
   width: 25px;
 }
 .restaurants_squares--animation-heart-2, .restaurants_container--animation-heart-2 {
-  width: 56px;
-  top: 98px;
+  width: 35px;
+  top: 62px;
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation-heart, .restaurants_container--animation-heart {
-    width: 25px;
+    width: 35px;
+    top: 50px;
   }
 }
 .restaurants_squares--animation-heart:hover, .restaurants_container--animation-heart:hover {
@@ -459,7 +464,12 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation-heart-2, .restaurants_container--animation-heart-2 {
-    width: 80px;
+    width: 35px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .restaurants_squares--animation-heart-4, .restaurants_container--animation-heart-4 {
+    top: 184px;
   }
 }
 .restaurants_squares--animation-heartfill, .restaurants_container--animation-heartfill {
@@ -468,6 +478,7 @@ header img {
   top: -2px;
   background-color: white;
   transition: 1s;
+  width: 36px;
 }
 .restaurants_squares--animation-heartfill:focus, .restaurants_squares--animation-heartfill:hover, .restaurants_container--animation-heartfill:focus, .restaurants_container--animation-heartfill:hover {
   opacity: 0;
@@ -476,10 +487,10 @@ header img {
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation-heartfill, .restaurants_container--animation-heartfill {
     width: 25px;
-    height: 25px;
+    height: 33px;
   }
   .restaurants_squares--animation-heartfill-1, .restaurants_container--animation-heartfill-1 {
-    width: 80px;
+    width: 35px;
   }
 }
 .restaurants_squares--animation-heartfill-1, .restaurants_container--animation-heartfill-1 {
@@ -563,30 +574,42 @@ footer ul a {
   color: white;
 }
 
+header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
 header i {
-  font-size: 2rem;
-  margin-top: 3rem;
+  font-size: 35px;
   margin-left: 3rem;
+  margin: 0px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 35px;
+  top: 25px;
 }
 @media all and (max-width: 1024px) {
   header i {
-    font-size: 3rem;
+    font-size: 20px;
   }
 }
 header .logo_ohmyfood {
   text-align: center;
-  margin-top: -5rem;
-  margin-bottom: 2rem;
 }
 @media all and (max-width: 1024px) {
   header .logo_ohmyfood {
-    margin-top: -6rem;
+    margin: 0px;
   }
+}
+header img {
+  margin: 0px;
 }
 
 .image_restaurant {
   width: 100%;
-  height: 40rem;
+  height: 20rem;
   object-fit: cover;
 }
 
@@ -600,8 +623,8 @@ header .logo_ohmyfood {
 }
 @media all and (max-width: 1024px) {
   .menu {
-    border-radius: 115px 115px 0px 0px;
-    margin-top: -7rem;
+    border-radius: 60px 60px 0px 0px;
+    margin-top: -5rem;
   }
 }
 .menu_header {
@@ -610,34 +633,45 @@ header .logo_ohmyfood {
 }
 @media all and (max-width: 1024px) {
   .menu_header {
-    justify-content: flex-start;
-    margin-left: 5rem;
     font-size: 2rem;
+    margin-left: 1rem;
   }
 }
 .menu_header h1 {
   font-family: "Shrikhand", cursive;
-  margin-top: 6rem;
+  margin-top: 3rem;
   font-size: 3rem;
 }
 @media all and (max-width: 1024px) {
   .menu_header h1 {
-    font-size: 4rem;
+    font-size: 1.5rem;
+    margin-left: 11px;
   }
+}
+.menu section {
+  padding: 0 20px;
 }
 .menu_container {
   list-style-type: none;
   border-radius: 30px;
   background-color: white;
   box-shadow: 0px 15px 15px #dbdbdb;
-  margin: 35px 0px;
+  margin: 15px 0px;
   height: 7rem;
   cursor: pointer;
   animation: opacity 1s both;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 .menu_container:hover .menu_container-price {
   padding-right: 7rem;
   transition: 0.5s ease;
+}
+@media all and (max-width: 1024px) {
+  .menu_container:hover .menu_container-price {
+    padding-right: 4rem;
+  }
 }
 .menu_container:hover .validation_box {
   opacity: 1;
@@ -650,7 +684,7 @@ header .logo_ohmyfood {
 }
 @media all and (max-width: 1024px) {
   .menu_container:hover .validation_box i {
-    font-size: 65px;
+    font-size: 35px;
   }
 }
 .menu_container-1 {
@@ -689,57 +723,53 @@ header .logo_ohmyfood {
   align-items: center;
   width: 100%;
 }
-@media all and (max-width: 1024px) {
-  .menu_container-textprice {
-    margin-top: -2rem;
-  }
-}
 .menu_container-text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-left: 25px;
-  margin-top: 25px;
+  margin-top: 30px;
+}
+@media all and (max-width: 1024px) {
+  .menu_container-text {
+    margin-top: 10px;
+  }
 }
 .menu_container-title {
   font-weight: bold;
-}
-@media all and (max-width: 1024px) {
-  .menu_container-title {
-    font-size: 2.5rem;
-  }
 }
 .menu_container-title p {
   margin: 0;
   font-size: 1.5rem;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media all and (max-width: 1024px) {
   .menu_container-title p {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
   }
 }
 .menu_container-subtitle p {
   margin-top: 10px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 @media all and (max-width: 1024px) {
   .menu_container-subtitle p {
-    font-size: 2.3rem;
+    font-size: 1rem;
   }
 }
 .menu_container-price {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-right: 25px;
   padding-right: 0px;
   transition: 0.5s ease;
 }
 @media all and (max-width: 1024px) {
   .menu_container-price {
-    font-size: 2.3rem;
+    font-size: 1.2rem;
   }
 }
 .menu_container .validation_box {
@@ -748,8 +778,8 @@ header .logo_ohmyfood {
   position: absolute;
   background: #99E2D0;
   border-radius: 0 30px 30px 0;
-  margin-left: 485px;
-  margin-top: -109px;
+  right: 0;
+  top: 0px;
   padding: 0 13px;
   height: 7rem;
   width: 4rem;
@@ -758,35 +788,36 @@ header .logo_ohmyfood {
 }
 @media all and (max-width: 1024px) {
   .menu_container .validation_box {
-    border-radius: 0 45px 45px 0;
-    margin-left: 760px;
-    margin-top: -182px;
-    height: 11.3rem;
-    width: 7rem;
+    border-radius: 0 25px 25px 0;
+    height: 72px;
+    width: 35px;
   }
 }
 .menu_container .validation_box i {
-  font-size: 45px;
+  font-size: 35px;
   color: white;
 }
 @media all and (max-width: 1024px) {
   .menu_container {
-    padding: 50px 30px;
-    border-radius: 45px;
-    height: 5rem;
+    border-radius: 25px;
+    height: 4.5rem;
+    padding: 0px;
   }
 }
 .menu_card {
   display: grid;
   justify-content: center;
-  grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fill, 575px);
+  grid-gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
   text-align: initial;
+  grid-template-rows: 1fr;
 }
 @media all and (max-width: 1024px) {
   .menu_card {
-    grid-template-columns: repeat(1, 925px);
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0px;
   }
 }
 .menu h2 {
@@ -812,7 +843,7 @@ header .logo_ohmyfood {
 }
 @media all and (max-width: 1024px) {
   .menu h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 .menu button {
@@ -837,11 +868,11 @@ header .logo_ohmyfood {
 @media all and (max-width: 1024px) {
   .menu button {
     border-radius: 70px;
-    font-size: 2.5rem;
-    height: 7rem;
-    padding: 0px 100px;
+    font-size: 1rem;
+    height: 3rem;
+    padding: 0px 35px;
     margin-top: 80px;
-    margin-bottom: 160px;
+    margin-bottom: 75px;
   }
 }
 

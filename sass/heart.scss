@@ -5,19 +5,23 @@
     &_container {
         &--animation {
             font-size: 1.5rem;
-            margin-top: 20px;
+            margin-top: 61px;
             &-1 {
                 margin-left: 11rem;
             }
             &-2 {
-                margin-left: 11rem;
-                font-size: 3.5rem;
-                margin-top: 6rem;
+                margin-left: 3rem;
+                font-size: 2rem;
+                width: 35px;
+                height: 35px;
             }
             &-3 {
                 margin-left: 11rem;
-                font-size: 3.5rem;
-                margin-top: 6rem;
+                font-size: 2rem;
+                margin-top: 4rem;;
+            }
+            &-4 {
+                margin-top: 25px;
             }
             @media all and (max-width: 1024px) {
                 margin-top: 20px;
@@ -26,18 +30,18 @@
                     margin-left: 28rem;
                 }
                 &-2 {
-                    margin-left: 7rem;
-                    margin-top: 6rem;
-                    font-size: 4.5rem;
-                    width: 80px;
-                    height: 75px;
+                    margin-left: 3rem;
+                    margin-top: 3rem;
+                    font-size: 2rem;
+                    width: 35px;
+                    height: 35px;
                 }
                 &-3 {
-                    margin-left: 16rem;
-                    margin-top: 6rem;
-                    font-size: 4.5rem;
-                    width: 80px;
-                    height: 75px;
+                    margin-left: 3rem;
+                    margin-top: 3rem;
+                    font-size: 1.5rem;
+                    width: 35px;
+                    height: 35px
                 }
             }
             &-heart {
@@ -48,11 +52,12 @@
                 -webkit-background-clip: text;
                 width: 25px;
                 &-2 {
-                    width: 56px;
-                    top: 98px;
+                    width: 35px;
+                    top: 62px;
                 }
                 @media all and (max-width: 1024px) {
-                    width: 25px;
+                    width: 35px;
+                    top: 50px;
                 }
                 &:hover {
                     opacity: 1;
@@ -61,7 +66,12 @@
                 }
                 &-2 {
                     @media all and (max-width: 1024px) {
-                    width: 80px;
+                    width: 35px;
+                    }
+                }
+                &-4 {
+                    @media all and (max-width: 1024px) {
+                    top: 184px;
                     }
                 }
             }
@@ -71,6 +81,7 @@
                 top: -2px;
                 background-color: white;
                 transition: 1s;
+                width: 36px;
                 &:focus,
                 &:hover {
                 opacity: 0;
@@ -78,9 +89,9 @@
                 }
                 @media all and (max-width: 1024px) {
                     width: 25px;
-                    height: 25px;
+                    height: 33px;
                     &-1 {
-                        width: 80px;
+                        width: 35px;
                     }
                 }
                 &-1 {
