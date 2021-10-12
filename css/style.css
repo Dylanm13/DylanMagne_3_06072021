@@ -76,7 +76,7 @@ header img {
 }
 @media all and (max-width: 1024px) {
   header img {
-    width: 27rem;
+    width: 10rem;
     margin-left: 0rem;
   }
 }
@@ -85,14 +85,7 @@ header img {
   display: flex;
   font-size: 2rem;
   margin-left: 2rem;
-}
-.localisation_icon {
-  margin-top: 2rem;
-}
-@media all and (max-width: 1024px) {
-  .localisation_icon {
-    margin-top: 3rem;
-  }
+  align-items: center;
 }
 .localisation_text {
   margin-left: 2rem;
@@ -102,7 +95,7 @@ header img {
     justify-content: center;
     margin-left: 0rem;
     background-color: #EAEAEA;
-    font-size: 3rem;
+    font-size: 1.2rem;
     box-shadow: inset 0px 10px 10px #DBDBDB;
   }
 }
@@ -115,7 +108,7 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .explore {
-    padding: 6rem 3rem;
+    padding: 3rem 0rem;
   }
 }
 .explore_text h1 {
@@ -124,11 +117,11 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .explore_text h1 {
-    font-size: 4.7rem;
+    font-size: 1.7rem;
   }
 }
 .explore_text p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 200;
 }
 .explore_button {
@@ -151,19 +144,19 @@ header img {
 @media all and (max-width: 1024px) {
   .explore_button {
     border-radius: 70px;
-    font-size: 3rem;
-    height: 9rem;
-    padding: 0px 70px;
+    font-size: 1rem;
+    height: 3rem;
+    padding: 0px 20px;
     margin-top: 2rem;
   }
 }
 
 .function {
-  padding: 7rem 0rem;
+  padding: 2rem 0rem;
 }
 @media all and (min-width: 1024px) {
   .function {
-    padding: 4rem 0rem;
+    padding: 7rem 0rem;
   }
 }
 .function h2 {
@@ -173,22 +166,26 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .function h2 {
-    font-size: 4rem;
+    font-size: 1.7rem;
     text-align: left;
-    margin-left: 3rem;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
   }
 }
 .function ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 570px);
-  grid-gap: 5rem;
+  display: flex;
   justify-content: center;
   padding: 0px;
 }
 @media all and (max-width: 1024px) {
   .function ul {
-    grid-template-columns: repeat(1, 850px);
-    padding: 0px;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .function ul {
+    margin-left: -85px;
   }
 }
 .function_buttons {
@@ -198,13 +195,18 @@ header img {
   background-color: #F6F6F6;
   border-radius: 50px;
   margin-left: 2rem;
-  height: 11rem;
+  height: 7rem;
   cursor: pointer;
   transition: 1s;
+  align-items: center;
+  margin-left: 80px;
 }
-@media all and (min-width: 1024px) {
+@media all and (max-width: 1024px) {
   .function_buttons {
-    height: 8rem;
+    font-size: 1.2rem;
+    margin-left: 0px;
+    height: 4rem;
+    margin-top: 1rem;
   }
 }
 .function_buttons:hover, .function_buttons:active {
@@ -216,12 +218,6 @@ header img {
   color: #9356DC;
   transition: 1s;
 }
-@media all and (max-width: 1024px) {
-  .function_buttons {
-    font-size: 3rem;
-    margin-left: 0px;
-  }
-}
 .function_numbers {
   border: 1px solid #9356DC;
   border-radius: 40px;
@@ -230,40 +226,36 @@ header img {
   text-align: center;
   width: 40px;
   height: 35px;
-  margin-left: -1.5rem;
-  margin-top: 3.5rem;
-  padding-top: 5px;
+  margin-left: -0.5rem;
   font-size: 1.5rem;
-}
-@media all and (min-width: 1024px) {
-  .function_numbers {
-    margin-top: 2.5rem;
-  }
+  align-items: center;
+  padding-top: 5px;
+  position: absolute;
 }
 @media all and (max-width: 1024px) {
   .function_numbers {
-    width: 60px;
-    height: 55px;
-    padding-top: 5px;
-    font-size: 2.5rem;
+    width: 20px;
+    height: 20px;
+    font-size: 1rem;
+    padding: 0px;
   }
 }
 .function_icon {
-  padding: 2.7rem 3rem;
+  padding: 0.7rem 3rem;
   color: grey;
 }
 @media all and (max-width: 1024px) {
   .function_icon {
-    padding: 3.8rem 3rem;
+    padding: 0.8rem 2rem;
   }
 }
 .function_names {
   font-weight: bold;
-  margin-top: 2.5rem;
+  padding-right: 50px;
 }
 @media all and (max-width: 1024px) {
   .function_names {
-    margin-top: 3.5rem;
+    padding-right: 0px;
   }
 }
 
@@ -272,7 +264,7 @@ header img {
   height: auto;
   padding-top: 2rem;
   margin-top: 3rem;
-  padding-bottom: 9rem;
+  padding-bottom: 4rem;
 }
 .restaurants h2 {
   font-size: 3rem;
@@ -282,10 +274,10 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .restaurants h2 {
-    font-size: 3rem;
+    font-size: 1.7rem;
     text-align: left;
-    margin-left: 3rem;
-    padding-top: 4rem;
+    margin-left: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
   }
 }
@@ -297,34 +289,12 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .restaurants_grid {
-    grid-template-columns: repeat(1, 875px);
-    grid-gap: 2.5rem;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
     margin-left: 0px;
     justify-content: center;
-  }
-}
-.restaurants_new {
-  z-index: 1;
-  position: relative;
-  width: max-content;
-  margin: 0px;
-  background-color: #99E2D0;
-  color: #008766;
-  left: 16rem;
-  top: 1.5rem;
-  font-size: 1rem;
-  padding: 7px 19px;
-  font-weight: bold;
-  border-radius: 5px;
-}
-@media all and (max-width: 1024px) {
-  .restaurants_new {
-    left: 39rem;
-    top: 2rem;
-    font-size: 2.5rem;
-    padding: 15px 30px;
-    font-weight: bold;
-    border-radius: 5px;
+    padding: 0 20px;
   }
 }
 .restaurants_container {
@@ -334,6 +304,7 @@ header img {
   box-shadow: 0px 15px 15px #DBDBDB;
   height: 275px;
   transition: 1s;
+  position: relative;
 }
 .restaurants_container:hover {
   transition: 0.5s;
@@ -341,10 +312,27 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .restaurants_container {
-    width: 875px;
-    height: 610px;
-    border-radius: 45px;
+    width: 100%;
+    height: 15rem;
+    border-radius: 20px;
   }
+}
+.restaurants_container-new {
+  padding: 7px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  align-items: center;
+  position: absolute;
+  background: #99e2d0;
+  top: 25px;
+  display: flex;
+  right: 20px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.restaurants_container-new p {
+  color: #008766;
+  margin: 0px;
 }
 .restaurants_container--images {
   width: 375px;
@@ -352,17 +340,11 @@ header img {
   border-radius: 30px 30px 0px 0px;
   object-fit: cover;
 }
-.restaurants_container--images-new {
-  margin-top: -33px;
-}
 @media all and (max-width: 1024px) {
   .restaurants_container--images {
-    width: 875px;
-    height: 455px;
-    border-radius: 45px 45px 0px 0px;
-  }
-  .restaurants_container--images-new {
-    margin-top: -5rem;
+    width: 100%;
+    height: 10rem;
+    border-radius: 20px 20px 0px 0px;
   }
 }
 .restaurants_container--textheart {
@@ -370,6 +352,14 @@ header img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+.restaurants_container--text {
+  margin-top: 20px;
+}
+@media all and (min-width: 1024px) {
+  .restaurants_container--text {
+    margin-top: 0px;
+  }
 }
 .restaurants_container--title {
   margin-left: 1rem;
@@ -379,9 +369,9 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .restaurants_container--title {
-    margin-left: 2rem;
-    margin-top: 1rem;
-    font-size: 2.8rem;
+    margin-left: 1rem;
+    margin-top: -1rem;
+    font-size: 1.2rem;
   }
 }
 .restaurants_container--subtitle {
@@ -390,9 +380,9 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .restaurants_container--subtitle {
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 }
 .restaurants_container--animation {
@@ -401,13 +391,11 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .restaurants_container--animation {
-    font-size: 3.5rem;
-    padding-right: 4.5rem;
+    padding-right: 2.5rem;
   }
 }
 
 .restaurants_squares--animation, .restaurants_container--animation {
-  margin-left: 9rem;
   font-size: 1.5rem;
   margin-top: 20px;
 }
@@ -427,7 +415,7 @@ header img {
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation, .restaurants_container--animation {
     margin-top: 20px;
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
   .restaurants_squares--animation-1, .restaurants_container--animation-1 {
     margin-left: 28rem;
@@ -461,7 +449,7 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation-heart, .restaurants_container--animation-heart {
-    width: 70px;
+    width: 25px;
   }
 }
 .restaurants_squares--animation-heart:hover, .restaurants_container--animation-heart:hover {
@@ -487,8 +475,8 @@ header img {
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation-heartfill, .restaurants_container--animation-heartfill {
-    width: 70px;
-    height: 65px;
+    width: 25px;
+    height: 25px;
   }
   .restaurants_squares--animation-heartfill-1, .restaurants_container--animation-heartfill-1 {
     width: 80px;
@@ -510,7 +498,7 @@ header img {
 footer {
   background-color: #353535;
   color: white;
-  padding: 6rem 0rem;
+  padding: 2rem 0rem;
   text-align: center;
 }
 @media all and (max-width: 1024px) {
@@ -527,32 +515,29 @@ footer h2 {
 }
 @media all and (max-width: 1024px) {
   footer h2 {
-    font-size: 3rem;
-    margin-left: 6rem;
+    font-size: 1.7rem;
+    margin-left: 2rem;
     text-align: left;
-    height: 70px;
+    height: 40px;
   }
 }
 footer ul {
   list-style-type: none;
   padding-top: 5rem;
   margin: 0px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 390px);
-  grid-gap: 2rem;
+  display: flex;
   font-size: 1.5rem;
   justify-content: center;
+  flex-direction: column;
+  padding-left: 0px;
 }
 @media all and (max-width: 1024px) {
   footer ul {
-    grid-template-columns: repeat(1, 660px);
-    grid-gap: 1.2rem;
-    margin-left: 3rem;
     justify-content: inherit;
-    font-size: 3rem;
+    font-size: 1.2rem;
     padding-top: 3rem;
-    height: 15rem;
-    padding-bottom: 3rem;
+    height: 8rem;
+    margin-left: 2rem;
   }
 }
 footer ul i {
@@ -561,22 +546,17 @@ footer ul i {
 }
 @media all and (max-width: 1024px) {
   footer ul i {
-    margin-right: 2.5rem;
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 footer ul li {
   transition: 0.5s;
   cursor: pointer;
+  margin-top: 5px;
 }
 footer ul li:hover {
   font-size: 1.7rem;
   transition: 0.5s;
-}
-@media all and (max-width: 1024px) {
-  footer ul li:hover {
-    font-size: 3.2rem;
-  }
 }
 footer ul a {
   text-decoration: none;

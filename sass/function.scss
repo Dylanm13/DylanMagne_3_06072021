@@ -1,29 +1,31 @@
 @import "colors.scss";
 
 .function {
-    padding: 7rem 0rem;
+    padding: 2rem 0rem;
     @media all and (min-width: 1024px) {
-        padding: 4rem 0rem;
+        padding: 7rem 0rem;
         }
     h2 {
         font-size: 3rem;
         text-align: center;
         padding-bottom: 3rem;
         @media all and (max-width: 1024px) {
-            font-size: 4rem;
+            font-size: 1.7rem;
             text-align: left;
-            margin-left: 3rem;
+            margin-left: 1rem;
+            padding-bottom: 1rem;
         }
     }
     ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 570px);
-        grid-gap: 5rem;
+        display: flex;
         justify-content: center;
         padding: 0px;
         @media all and (max-width: 1024px) {
-            grid-template-columns: repeat(1, 850px);
-            padding: 0px;
+            flex-direction: column;
+            padding: 0 20px;
+        }
+        @media all and (min-width: 1024px) {
+            margin-left: -85px;
         }
     }
     &_buttons {
@@ -33,11 +35,16 @@
         background-color: $color-quadra;
         border-radius: 50px;
         margin-left: 2rem;
-        height: 11rem;
+        height: 7rem;
         cursor: pointer;
         transition: 1s;
-        @media all and (min-width: 1024px) {
-            height:8rem;
+        align-items: center;
+        margin-left: 80px;
+        @media all and (max-width: 1024px) {
+            font-size: 1.2rem;
+            margin-left: 0px;
+            height: 4rem;
+            margin-top: 1rem;
         }
         &:hover,
         &:active {
@@ -50,10 +57,6 @@
             color: $color-primary;
             transition: 1s;
         }
-        @media all and (max-width: 1024px) {
-            font-size: 3rem;
-            margin-left: 0px;
-        }
     }
     &_numbers {
         border: 1px solid $color-primary;
@@ -63,32 +66,30 @@
         text-align: center;
         width: 40px;
         height: 35px;
-        margin-left: -1.5rem;
-        margin-top: 3.5rem;
-        padding-top: 5px;
+        margin-left: -0.5rem;
         font-size: 1.5rem;
-        @media all and (min-width: 1024px) {
-            margin-top: 2.5rem;
-        }
+        align-items: center;
+        padding-top: 5px;
+        position: absolute;
         @media all and (max-width: 1024px) {
-            width: 60px;
-            height: 55px;
-            padding-top: 5px;
-            font-size: 2.5rem;
+            width: 20px;
+            height: 20px;
+            font-size: 1rem;
+            padding: 0px;
         }
     }
     &_icon {
-        padding: 2.7rem 3rem;
+        padding: 0.7rem 3rem;
         color: grey;
         @media all and (max-width: 1024px) {
-            padding: 3.8rem 3rem;
+            padding: 0.8rem 2rem;
         }
     }
     &_names {
         font-weight: bold;
-        margin-top: 2.5rem;
+        padding-right: 50px;
         @media all and (max-width: 1024px) {
-            margin-top: 3.5rem;
+            padding-right: 0px;
         }
     }
 }

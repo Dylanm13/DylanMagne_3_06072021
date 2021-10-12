@@ -9,7 +9,7 @@ header img {
 }
 @media all and (max-width: 1024px) {
   header img {
-    width: 27rem;
+    width: 10rem;
     margin-left: 0rem;
   }
 }

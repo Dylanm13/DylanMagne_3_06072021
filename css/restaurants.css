@@ -3,7 +3,7 @@
   height: auto;
   padding-top: 2rem;
   margin-top: 3rem;
-  padding-bottom: 9rem;
+  padding-bottom: 4rem;
 }
 .restaurants h2 {
   font-size: 3rem;
@@ -13,10 +13,10 @@
 }
 @media all and (max-width: 1024px) {
   .restaurants h2 {
-    font-size: 3rem;
+    font-size: 1.7rem;
     text-align: left;
-    margin-left: 3rem;
-    padding-top: 4rem;
+    margin-left: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
   }
 }
@@ -28,34 +28,12 @@
 }
 @media all and (max-width: 1024px) {
   .restaurants_grid {
-    grid-template-columns: repeat(1, 875px);
-    grid-gap: 2.5rem;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
     margin-left: 0px;
     justify-content: center;
-  }
-}
-.restaurants_new {
-  z-index: 1;
-  position: relative;
-  width: max-content;
-  margin: 0px;
-  background-color: #99E2D0;
-  color: #008766;
-  left: 16rem;
-  top: 1.5rem;
-  font-size: 1rem;
-  padding: 7px 19px;
-  font-weight: bold;
-  border-radius: 5px;
-}
-@media all and (max-width: 1024px) {
-  .restaurants_new {
-    left: 39rem;
-    top: 2rem;
-    font-size: 2.5rem;
-    padding: 15px 30px;
-    font-weight: bold;
-    border-radius: 5px;
+    padding: 0 20px;
   }
 }
 .restaurants_container {
@@ -65,6 +43,7 @@
   box-shadow: 0px 15px 15px #DBDBDB;
   height: 275px;
   transition: 1s;
+  position: relative;
 }
 .restaurants_container:hover {
   transition: 0.5s;
@@ -72,10 +51,27 @@
 }
 @media all and (max-width: 1024px) {
   .restaurants_container {
-    width: 875px;
-    height: 610px;
-    border-radius: 45px;
+    width: 100%;
+    height: 15rem;
+    border-radius: 20px;
   }
+}
+.restaurants_container-new {
+  padding: 7px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  align-items: center;
+  position: absolute;
+  background: #99e2d0;
+  top: 25px;
+  display: flex;
+  right: 20px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.restaurants_container-new p {
+  color: #008766;
+  margin: 0px;
 }
 .restaurants_container--images {
   width: 375px;
@@ -83,17 +79,11 @@
   border-radius: 30px 30px 0px 0px;
   object-fit: cover;
 }
-.restaurants_container--images-new {
-  margin-top: -33px;
-}
 @media all and (max-width: 1024px) {
   .restaurants_container--images {
-    width: 875px;
-    height: 455px;
-    border-radius: 45px 45px 0px 0px;
-  }
-  .restaurants_container--images-new {
-    margin-top: -5rem;
+    width: 100%;
+    height: 10rem;
+    border-radius: 20px 20px 0px 0px;
   }
 }
 .restaurants_container--textheart {
@@ -101,6 +91,14 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+.restaurants_container--text {
+  margin-top: 20px;
+}
+@media all and (min-width: 1024px) {
+  .restaurants_container--text {
+    margin-top: 0px;
+  }
 }
 .restaurants_container--title {
   margin-left: 1rem;
@@ -110,9 +108,9 @@
 }
 @media all and (max-width: 1024px) {
   .restaurants_container--title {
-    margin-left: 2rem;
-    margin-top: 1rem;
-    font-size: 2.8rem;
+    margin-left: 1rem;
+    margin-top: -1rem;
+    font-size: 1.2rem;
   }
 }
 .restaurants_container--subtitle {
@@ -121,9 +119,9 @@
 }
 @media all and (max-width: 1024px) {
   .restaurants_container--subtitle {
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 }
 .restaurants_container--animation {
@@ -132,8 +130,7 @@
 }
 @media all and (max-width: 1024px) {
   .restaurants_container--animation {
-    font-size: 3.5rem;
-    padding-right: 4.5rem;
+    padding-right: 2.5rem;
   }
 }
 

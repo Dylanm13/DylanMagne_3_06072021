@@ -4,12 +4,7 @@
     display: flex;
     font-size: 2rem;
     margin-left: 2rem;
-    &_icon {
-       margin-top: 2rem;
-       @media all and (max-width: 1024px) {
-        margin-top: 3rem;
-    }
-    }
+    align-items: center;
     &_text {
         margin-left: 2rem;
     }
@@ -17,7 +12,7 @@
             justify-content: center;
             margin-left: 0rem;
             background-color: $color-quinta;
-            font-size: 3rem;
+            font-size: 1.2rem;
             box-shadow: inset 0px 10px 10px $shadow-color;
     }
 }

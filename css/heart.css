@@ -1,5 +1,4 @@
 .restaurants_squares--animation, .restaurants_container--animation {
-  margin-left: 9rem;
   font-size: 1.5rem;
   margin-top: 20px;
 }
@@ -19,7 +18,7 @@
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation, .restaurants_container--animation {
     margin-top: 20px;
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
   .restaurants_squares--animation-1, .restaurants_container--animation-1 {
     margin-left: 28rem;
@@ -53,7 +52,7 @@
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation-heart, .restaurants_container--animation-heart {
-    width: 70px;
+    width: 25px;
   }
 }
 .restaurants_squares--animation-heart:hover, .restaurants_container--animation-heart:hover {
@@ -79,8 +78,8 @@
 }
 @media all and (max-width: 1024px) {
   .restaurants_squares--animation-heartfill, .restaurants_container--animation-heartfill {
-    width: 70px;
-    height: 65px;
+    width: 25px;
+    height: 25px;
   }
   .restaurants_squares--animation-heartfill-1, .restaurants_container--animation-heartfill-1 {
     width: 80px;
