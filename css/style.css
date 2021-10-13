@@ -590,7 +590,7 @@ header i {
   left: 35px;
   top: 25px;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   header i {
     font-size: 20px;
   }
@@ -598,7 +598,7 @@ header i {
 header .logo_ohmyfood {
   text-align: center;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   header .logo_ohmyfood {
     margin: 0px;
   }
@@ -621,7 +621,7 @@ header img {
   position: relative;
   margin-top: -5rem;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu {
     border-radius: 60px 60px 0px 0px;
     margin-top: -5rem;
@@ -631,7 +631,7 @@ header img {
   display: flex;
   justify-content: center;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu_header {
     font-size: 2rem;
     margin-left: 1rem;
@@ -642,7 +642,7 @@ header img {
   margin-top: 3rem;
   font-size: 3rem;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu_header h1 {
     font-size: 1.5rem;
     margin-left: 11px;
@@ -657,7 +657,7 @@ header img {
   background-color: white;
   box-shadow: 0px 15px 15px #dbdbdb;
   margin: 15px 0px;
-  height: 7rem;
+  height: 5rem;
   cursor: pointer;
   animation: opacity 1s both;
   position: relative;
@@ -665,10 +665,10 @@ header img {
   width: 100%;
 }
 .menu_container:hover .menu_container-price {
-  padding-right: 7rem;
+  padding-right: 4rem;
   transition: 0.5s ease;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu_container:hover .menu_container-price {
     padding-right: 4rem;
   }
@@ -682,7 +682,7 @@ header img {
   transform: rotate(180deg);
   animation: rotate 0.5s both;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu_container:hover .validation_box i {
     font-size: 35px;
   }
@@ -721,9 +721,8 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu_container-textprice {
     width: 100%;
   }
@@ -733,9 +732,9 @@ header img {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-left: 25px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu_container-text {
     margin-top: 10px;
   }
@@ -745,34 +744,34 @@ header img {
 }
 .menu_container-title p {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu_container-title p {
     font-size: 1.2rem;
   }
 }
 .menu_container-subtitle p {
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu_container-subtitle p {
     font-size: 1rem;
   }
 }
 .menu_container-price {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-right: 25px;
   padding-right: 0px;
   transition: 0.5s ease;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu_container-price {
     font-size: 1.2rem;
   }
@@ -786,12 +785,12 @@ header img {
   right: 0;
   top: 0px;
   padding: 0 13px;
-  height: 7rem;
-  width: 4rem;
+  height: 100%;
+  width: 2rem;
   justify-content: center;
   align-items: center;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu_container .validation_box {
     border-radius: 0 25px 25px 0;
     height: 72px;
@@ -802,7 +801,7 @@ header img {
   font-size: 35px;
   color: white;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu_container {
     border-radius: 25px;
     height: 4.5rem;
@@ -812,12 +811,12 @@ header img {
 .menu_card {
   display: grid;
   justify-content: center;
-  grid-gap: 5rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
   text-align: initial;
   grid-template-rows: 1fr;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu_card {
     margin-top: 2rem;
     display: flex;
@@ -841,12 +840,12 @@ header img {
   left: 0px;
   bottom: -8px;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu h2::after {
     width: 70px;
   }
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu h2 {
     font-size: 1.5rem;
   }
@@ -870,7 +869,7 @@ header img {
   box-shadow: 0px 15px 5px #DBDBDB;
   transition: 1s;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1435px) {
   .menu button {
     border-radius: 70px;
     font-size: 1rem;
