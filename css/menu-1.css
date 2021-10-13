@@ -145,7 +145,12 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 500px;
+}
+@media all and (max-width: 1024px) {
+  .menu_container-textprice {
+    width: 100%;
+  }
 }
 .menu_container-text {
   white-space: nowrap;

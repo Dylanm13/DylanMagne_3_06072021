@@ -131,7 +131,10 @@ section {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 100%;
+                width: 500px;
+                @media all and (max-width: 1024px) {
+                    width: 100%;
+                }
             }
             &-text {
                 white-space: nowrap;
